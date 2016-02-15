@@ -1,0 +1,120 @@
+body {
+  margin-top: $navbar-height;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.page-heading {
+  margin:0;
+  padding: 0 0 20px;
+  font-weight: 400;
+}
+
+.content-wrapper {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+  .container & {
+    padding: 0;
+  }
+}
+
+a.text-muted:hover {
+	color:$brand-primary;
+	text-decoration: none;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  padding: 1.25rem 0;
+  line-height: normal;
+}
+
+blockquote {
+  border-left: 2px solid #efefef;
+  padding-left:10px;
+  font-size: .9rem;
+}
+
+.pagination {
+  a:hover { text-decoration: none; }
+}
+.table .pagination {
+  line-height: 1;
+  margin:0 !important;
+}
+
+.media-right {
+  padding-left: 1.25rem;
+}
+
+.media-left {
+  padding-right: 1.25rem;
+}
+
+.media-body {
+  line-height: normal;
+}
+
+.jumbotron {
+  background: darken($body-bg, 5%);
+  border:1px solid rgba(0,0,0, .05);
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;  
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.table-sm td {
+  padding: .325rem .625rem; 
+}
+.table-messages {
+  margin-bottom: 0;
+  a {
+    color: $gray;
+    &:hover {
+      text-decoration: none; 
+    }
+  }
+  tr:hover {
+    background: #efefef; 
+  }
+
+}
+
+.label-primary-outline {
+  color: $brand-primary;
+  background: #ffffff;
+}
+
+.photo-gallery {
+  display: block;
+  background: #efefef;
+  border-bottom: 1px solid $card-border-color;
+  padding-top: .325rem; 
+  padding-right: .325rem; 
+  min-height: 78px;   
+  a.photo-link {
+    float:left;
+    margin-right: 0;
+    width: 12.5%;
+    border:1px solid rgba(255,255,255, .54); 
+    margin-left: .325rem;
+    margin-bottom: .325rem;
+
+    img {
+       display: block; 
+       width: 100%; 
+    }
+  }  
+}
+
+.login {
+  margin-top:0;
+  padding: 0 1.25rem;
+}
+
+.text-muted-light {
+  color: lighten($text-muted,22%);
+}

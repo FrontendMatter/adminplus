@@ -1,0 +1,33 @@
+.email-header {
+  padding: $grid-gutter-width/2;
+  border-bottom: 1px solid $border-color;
+}
+
+.email-list-attachment {
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  color: $text-muted;
+}
+
+@include media-breakpoint-down(md) {
+  .email > .media-body {
+    display: none;
+    position: absolute;
+    top: $navbar-height;
+    left: 0;
+    right: 0;
+    padding: $grid-gutter-width/2;
+    width: auto;
+    z-index: 2;
+    background: $body-bg;
+  }
+}
+
+.post-content a {
+  display: inline-block;
+  img {
+    width: 80px;
+    border-radius: 3px;
+  }
+}

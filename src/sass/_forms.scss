@@ -1,0 +1,60 @@
+.form-control {
+  border-color: $gray-lighter;
+}
+
+.c-input {
+  > input {
+    &:checked ~ .c-indicator {
+      background-color: $brand-primary;
+    }
+
+    &:focus ~ .c-indicator {
+      // the mixin is not used here to make sure there is feedback
+      box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem $brand-primary;
+    }
+
+    &:active ~ .c-indicator {
+      background-color: lighten($brand-primary,20%);
+    }
+  }
+}
+
+.c-checkbox {
+  input:indeterminate ~ .c-indicator {
+    background-color: $brand-primary;
+  }
+}
+
+.c-inputs-stacked {
+  position: relative;
+  .c-input {
+    display: block;
+    line-height: 1rem;
+    &::after {
+      display: block;
+      margin-bottom: .5rem;
+      content: "";
+    }
+    &:last-child {
+      &, 
+      &::after {
+        margin-bottom: 0;
+      }
+      
+    }
+    + .c-input {
+      margin-left: 0;
+    }
+  }
+}
+
+.c-select {
+  &:focus {
+    border-color: $brand-primary;
+  }
+}
+
+// Focus state
+.file input:focus ~ .file-custom {
+  @include box-shadow(0 0 0 .075rem #fff, 0 0 0 .2rem $brand-primary);
+}

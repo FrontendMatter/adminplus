@@ -1,0 +1,7 @@
+.bg-white {  background: #fff; }
+.bg-red { background: $red; }
+.bg-deep-purple { background: $deep-purple; }
+.bg-purple { background: $purple; }
+.bg-orange { background: $orange; }
+.bg-transparent { background: transparent; }
+.bg-primary-light { background: lighten($brand-primary, 53%); }

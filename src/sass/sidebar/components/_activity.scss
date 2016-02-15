@@ -1,0 +1,43 @@
+
+// SIDEBAR ACTIVITY
+.sidebar-activity {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  
+  li { 
+    padding: .625rem 1.25rem; 
+    font-size: .9rem;
+    &.media {
+      margin:0;
+      .media-left {
+        padding-right: .625rem;
+      }
+    }
+    small { 
+      display: block; 
+      font-size: .7rem;
+      margin-top: .325rem;
+    }  
+    .sidebar-activity-icon {
+      display: inline-block;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      line-height: 30px; 
+      text-align: center; 
+      i {
+        font-size: 1.2rem; 
+        position: relative;
+        top:-1px;
+        line-height:inherit;
+      } 
+    }
+    .sidebar-activity-message {
+      display: inline-block;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  } 
+}

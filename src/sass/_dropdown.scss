@@ -1,0 +1,10 @@
+.dropdown-menu {
+  box-shadow: 0 0px 3px rgba(0,0,0, 0.1);
+}
+
+.dropdown .dropdown-toggle:hover {
+  cursor: pointer; 
+}
+.dropdown-toggle[data-caret="false"]::after {
+  display: none;
+}

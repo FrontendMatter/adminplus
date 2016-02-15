@@ -1,0 +1,45 @@
+// SIDEBAR USER AVATAR
+.sidebar-user {
+  display: block;
+  padding: .625rem 1.25rem;
+  background: rgba(0,0,0, .05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
+  img { 
+    width: 40px; 
+    margin-right:.325rem;  
+  }
+  &:hover {
+    text-decoration: none;
+  }  
+}
+
+// SIDEBAR USER AVATAR CENTERED 
+.sidebar-user-center {  
+  display: block;
+  padding: .625rem 1.25rem;
+  text-align: center;
+
+  .sidebar-user-avatar {
+    display: block;
+    img {
+      width: 60px; 
+      margin-bottom:10px;
+      display: inline-block;
+    }
+  }
+  .user-info {
+    display: block;
+    margin-bottom: .625rem; 
+  }
+  .user-extras {
+    display: block;
+    margin-bottom: .625rem;
+    a { 
+      margin-right: 10px;
+      &:last-of-type {  margin-right: 0; }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

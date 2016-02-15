@@ -1,0 +1,51 @@
+.navbar-nav {
+  .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .nav-item:last-of-type {
+    margin-right: 1rem;
+  }
+  .dropdown-menu {
+    i.material-icons {
+      color:$gray-light;
+      margin-right:3px;
+    }
+  }
+}
+
+// COLLAPSING MENU
+@include media-breakpoint-down(sm) {
+  .collapse > .navbar-nav {
+    clear:both;
+    padding:15px;
+    display: block;
+    width:100%;
+    .nav-item {
+      float:none;
+      display: block;
+      margin-left:0;
+    }
+  }
+}
+
+// REGULAR & COLLAPSED MENU FIXES
+@include media-breakpoint-down(sm) {
+  .navbar-toggleable-xs  {
+    position: fixed;
+    top: $navbar-height;
+    left:0;
+    right:0; 
+    background: $brand-primary; 
+    .nav-item {
+      display: block;
+      float: none;
+      padding-left: .625rem;
+      padding-right: .625rem;
+      margin: 0 1rem;
+    }
+    .nav-item.active  {
+      margin:0 1rem;
+    }
+  }
+}

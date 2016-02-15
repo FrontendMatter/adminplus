@@ -1,0 +1,36 @@
+// ALIGNMENT
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.vertical-middle {
+	vertical-align: middle !important;
+}
+
+.lh-0 {
+  line-height: 0 !important;
+}
+
+// IMAGES
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-bump {
+  box-shadow: 0 2px 2px rgba(0,0,0, 0.1);
+  border:1px solid #fff;
+}
+
+// FIX bootstrap embed
+.embed-responsive {
+  overflow: visible;
+}
+
+// SIZE
+.width-300 {
+  width:300px;
+}

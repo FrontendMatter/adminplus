@@ -1,0 +1,213 @@
+/* Set Desktop Masonry Columns */
+@include media-breakpoint-up(sm) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+.card {
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .05);
+
+  &-primary, &-info, &-success, &-warning, &-red {
+    color: #fff;
+    margin-bottom: .75rem;
+    border-radius: 3px; 
+  }
+
+  .card-header + .list-group {
+    .list-group-item:first-child { border-top: 0;} 
+  }
+
+  .card-header + .table {
+    margin-bottom: 0;
+    thead th { border-top: 0; } 
+    tr:first-child td { border-top:0 !important;}
+    &.table-bordered {
+      border: 0 !important;
+      th, td {
+        &:first-child {
+          border-left: 0 !important;
+        }
+        &:last-child {
+          border-right: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.card-footer-pagination {
+  line-height: 0;
+  .pagination {
+    margin:0;
+  }
+}
+
+.card-block-half {
+  padding: .625rem;
+}
+
+.card {
+  .card-header,
+  .card-footer {
+    padding: .625rem;
+    color: rgba(0,0,0, .84);
+    .media {
+      line-height: inherit; 
+    } 
+  } 
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: .625rem;
+  } 
+
+  .card-subtitle {
+    color: $text-muted;
+  }
+  
+  .card-title + .card-subtitle {
+    margin-top: -.625rem;
+  }
+  .card-header { 
+    .card-title, .card-subtitle {
+      margin:0 !important;
+    }
+    .media-body {
+      line-height: 1.5;
+    }
+  } 
+}
+
+// CUSTOM CARD BLOCKS
+.card {
+  .preview {
+    overflow: hidden;
+    @include media-breakpoint-up(sm) {
+      max-height: 300px;
+    }
+    img {
+      // WTF?
+      // background: url("../images/cover/preview.jpg") center;
+      height: 200px;
+      width: 100%;
+      display: block;
+    }
+  }
+  .user {
+    position: absolute;
+    a.avatar {
+      position: absolute;
+      bottom: -40px;
+      left: 25px;
+      border: 3px solid #fff;
+      border-radius: 50%;
+    }
+  }
+  ul.menu {
+    padding-left: 115px;
+    margin: 0;
+    height: 55px;
+    list-style: none;
+    background: #fff;
+    li {
+      display: inline-block;
+      &.active a {
+        color: $gray-dark;
+      }
+      a {
+        height: 55px;
+        line-height: 53px;
+        margin-right: 5px;
+        @include media-breakpoint-up(xs) {
+          margin-right: 15px;
+        }
+        color: #ccc;
+        font-size: 16px;
+        i.md {
+          font-size: 24px;
+          vertical-align: middle;
+          top: -2px;
+          margin-right: 5px;
+        }
+        &:hover {
+          color: $gray-dark;
+          text-decoration: none;
+        }
+        @include media-breakpoint-down(xs) {
+          span {
+            display: none
+          }
+        }
+      }
+    }
+  }
+}
+
+// CARD STYLES
+.card-red {
+  @include card-variant($red, $red);
+}
+
+.card-success {
+  .progress {
+    @include progress-variant(darken($brand-success, 12%));
+    &[value]::-webkit-progress-bar {
+      background-color: lighten($brand-success, 20%);
+    }
+  }
+}
+
+.card {
+  &.card-stats {
+    &-primary {
+      border-left: 3px solid $brand-primary;
+    }
+    &-success {
+      border-left: 3px solid $brand-success;
+    }
+    &-warning {
+      border-left: 3px solid $brand-warning;
+    }
+    &-danger {
+      border-left: 3px solid $brand-danger;
+    }
+  }
+  .card-button-wrapper {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+
+    .card-button {
+      color: $text-muted;
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+  }
+}
+
+// TABS IN CARD
+.card > .nav-tabs {
+  margin-bottom: -1px;
+  background: $body-bg;
+  .nav-link {
+    border-radius: 0;
+    color: $gray-light;
+    &:hover, &.active {
+      border-color: transparent;
+      color: $gray;
+    }
+  }
+}
+
+// LIST IN CARD
+.card > .list-group .list-group-item {
+  border-color: $card-border-color;
+  border-left: none;
+  border-right: none;
+  &:last-of-type {
+    border-bottom: none;
+  }
+}

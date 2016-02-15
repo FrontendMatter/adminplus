@@ -1,0 +1,11 @@
+.progress {
+  height: 6px;
+}
+
+// STYLES
+.progress-primary {
+  @include progress-variant($brand-primary);
+}
+.progress-gray {
+  @include progress-variant($gray-light);
+}

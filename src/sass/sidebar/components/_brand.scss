@@ -1,0 +1,14 @@
+// SIDEBAR BRAND
+.sidebar-brand {
+  display: block;
+  width: 100%;
+  height: $navbar-height;
+  line-height: $navbar-height - 2px; 
+  padding: 0 1.25rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  &:hover { 
+    cursor: pointer;
+    text-decoration: none;
+  }
+}

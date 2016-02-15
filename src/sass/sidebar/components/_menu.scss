@@ -1,0 +1,51 @@
+// SIDEBAR MENU 
+.sidebar .nav {
+  width: 100%;
+  .nav-item a {
+    padding: 0 1.25rem;
+    line-height: 42px;
+    display: block;
+    i {
+      width: 2.5rem;
+    }
+    .label {
+      float:right; 
+      margin-top: 13px;
+    }
+    &:hover { text-decoration: none }
+  }
+}
+
+// SIDEBAR SUBMENU
+.sidebar .nav-item {
+  ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+  }
+  &.open ul {
+    display: block;
+  }
+}
+
+
+// SIDEBAR MENU ITEM CARET
+.sidebar .nav-item {
+  &.open a:not(:only-child):before {
+    content: '\e5d8';
+  }
+  a:not(:only-child):before {
+    font-family: 'Material Icons';
+    font-size: 16px;
+    content: '\e5db';
+    position: absolute;
+    right: 1.25rem;
+    margin-top: 2px;
+  }
+}
+// SIDEBAR MENU ITEM HEADING
+.sidebar .nav-item.nav-heading {
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}

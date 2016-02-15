@@ -1,0 +1,65 @@
+$body-bg:                   rgba(0, 0, 0, 0.05);
+$font-family-base:          Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+$grid-gutter-width:			1.25rem;
+
+$red:                       #E53935;
+$pink:                      #D81B60;
+$purple:                    #8E24AA;
+$deep-purple:               #5E35B1;
+$indigo:                    #3949AB;
+$blue:                      #1E88E5;
+$light-blue:                #039BE5;
+$cyan:                      #00ACC1;
+$teal:                      #00897B;
+
+$green:                     #4CAF50;
+$yellow:                    #FFEB3B;
+$orange:                    #FF5722;
+
+$brand-primary:             $light-blue;
+$brand-secondary:           #283593;
+$brand-warning:             #FF9800;
+$brand-info:                #00BCD4;
+$brand-success:             $green;
+$brand-danger:              $red;
+
+$btn-secondary-color:       #fff;
+$btn-secondary-bg:          $brand-secondary;
+$btn-secondary-border:      $brand-secondary;
+
+$card-border-radius:        3px;
+$breadcrumb-active-color:   rgba(0, 0, 0, 0.54);
+$breadcrumb-divider:        '>';
+$breadcrumb-divider-color:  rgba(0, 0, 0, 0.24);
+$breadcrumb-bg:             transparent;
+
+$state-success-bg:			lighten($brand-success, 43%);
+$state-info-bg:				lighten($brand-info, 54%);
+$state-warning-bg:			lighten($brand-warning, 43%);
+$state-danger-bg:			lighten($brand-danger, 40%);
+
+$sidebar-width:             250px;
+
+$progress-bar-bg:           $brand-primary;
+
+$list-group-border-radius:  0;
+$btn-border-radius:         0;
+
+$navbar-height: 			56px;
+$navbar-line-height: 			54px;
+$navbar-padding-vertical:    0;
+$navbar-padding-horizontal:  0;
+
+$border-color:				#e5e5e5;
+
+$progress-bar-success-bg:   $brand-success;
+$dropdown-border-color:     $border-color;
+
+$pagination-disabled-bg:	#efefef;
+
+$sidebar-light-link-color: $brand-primary;
+$sidebar-dark-link-color: #fff;
+
+// BOOTSTRAP VARIABLES
+@import '../../node_modules/bootstrap/scss/variables';
