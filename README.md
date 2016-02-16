@@ -7,8 +7,8 @@
 npm install --save \
 	adminplus \
 	bootstrap@4.0.0-alpha.2 \
-	jquery@2.1.4 \
-	tether@1.1.1
+	jquery@2 \
+	tether
 ```
 
 ### index.html
@@ -28,7 +28,7 @@ npm install --save \
 
   <!-- jQuery -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
+  
 </head>
 <body>
 
