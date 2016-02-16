@@ -1,6 +1,7 @@
 // jQuery
-import jQuery from 'jquery'
-window.$ = jQuery
+import 'jquery'
+import 'tether'
+import 'bootstrap'
 
 // AdminPlus Style
 import 'adminplus/dist/adminplus.css'

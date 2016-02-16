@@ -14,5 +14,6 @@ var config = new WebpackConfig()
 		}
 	})
 	.use('extract')
+	.use('vendor')
 
 module.exports = config

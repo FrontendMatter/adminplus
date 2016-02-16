@@ -8,11 +8,11 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="#overview">Introduction</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#structure">Structure</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#plugins">Plugins</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Structure</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="">Basic Usage</a></li>
+						</ul>
 					</li>
 				</ul>
 			</div>
