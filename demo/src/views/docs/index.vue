@@ -5,7 +5,8 @@
 </template>
 
 <script>
-	import Layout from './layout'
+	import unhyphenate from 'mout/string/unhyphenate'
+	import properCase from 'mout/string/properCase'
 	export default {
 		filters: {
 			replaceLinks (value) {
@@ -23,12 +24,19 @@
 		route: {
 			canReuse: false
 		},
-		components: {
-			Layout
-		},
 		computed: {
 			page () {
 				return this.$route.params.page
+			},
+			title () {
+				if (this.page) {
+					return properCase(unhyphenate(this.page))
+				}
+			}
+		},
+		created () {
+			if (this.page) {
+				document.title = `${ this.title } | AdminPlus Lite`
 			}
 		},
 		ready () {
@@ -41,10 +49,3 @@
 		}
 	}
 </script>
-
-<style>
-	.card-block {
-		position: relative;
-		overflow: hidden;
-	}
-</style>

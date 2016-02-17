@@ -608,9 +608,11 @@
 <script>
 	import { Sidebar } from 'adminplus'
 	export default {
+		created () {
+			document.title = 'Demo | AdminPlus Lite'
+		},
 		ready () {
 			Sidebar.init()
-			$('body').on('activate.bs.scrollspy', (e) => alert('a'))
 			$('body').scrollspy({ target: '#sidebar', offset: 74 })
 			$('.components-nav a').on('click', (e) => {
 				e.preventDefault()

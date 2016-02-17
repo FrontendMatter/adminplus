@@ -17,6 +17,10 @@
 	img {
 		max-width: 100%;
 	}
+	.card-block {
+		position: relative;
+		overflow: hidden;
+	}
 }
 @media (min-width: 768px) {
 	.main-container {
