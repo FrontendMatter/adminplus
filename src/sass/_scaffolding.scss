@@ -2,21 +2,17 @@ body {
   margin-top: $navbar-height;
   height: 100%;
   position: relative;
-  overflow-x: hidden;
 }
 
 .page-heading {
-  margin:0;
-  padding: 0 0 20px;
-  font-weight: 400;
+  padding: $grid-gutter-width 0;
 }
 
-.content-wrapper {
-  padding-left: $grid-gutter-width;
-  padding-right: $grid-gutter-width;
-  .container & {
-    padding: 0;
-  }
+.content-wrapper, 
+.content-wrapper > .container-fluid,
+div.page-heading {
+  position: relative;
+  overflow: hidden;
 }
 
 a.text-muted:hover {

@@ -15,13 +15,15 @@ router.map({
 		},
 		subRoutes: {
 			'/': {
+				name: 'docs.home',
 				component: function (resolve) {
 					require(['./views/docs/index'], resolve)
 				}
 			},
 			'/:page': {
+				name: 'docs.page',
 				component: function (resolve) {
-					require(['./views/docs/' + router.app.$route.params.page], resolve)
+					require(['./views/docs/index'], resolve)
 				}
 			}
 		}

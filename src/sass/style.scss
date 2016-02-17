@@ -1,10 +1,10 @@
 // Bootstrap 4
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
-// App
+// AdminPlus
+@import 'scaffolding';
 @import 'sidebar/sidebar';
 @import 'navbar/navbar';
-
 @import 'backgrounds';
 @import 'buttons';
 @import 'cards';
@@ -12,6 +12,3 @@
 @import 'helpers';
 @import 'material-icons';
 @import 'progress';
-@import 'scaffolding';
-
-@import 'pages/email';

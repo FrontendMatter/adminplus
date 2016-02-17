@@ -147,7 +147,7 @@
 
 // CARD STYLES
 .card-red {
-  @include card-variant($red, $red);
+  @include card-variant($red-500, $red-500);
 }
 
 .card-success {

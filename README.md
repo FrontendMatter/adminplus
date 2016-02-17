@@ -1,61 +1,20 @@
 # AdminPlus - Bootstrap 4 Admin Template
+Clean and lightweight Bootstrap 4 Admin Template with awesome premium features. AdminPlus extends Bootstrap 4 with layout options, sidebar navigation and a modern theme and it's a perfect choice for a professional admin template.
 
-## Basic usage
-> From any project, install adminplus and it's dependencies via npm:
+![AdminPlus - Bootstrap 4 Admin Template](https://image-tf.s3.envato.com/files/171402185/preview.__large_preview.png)
 
-```bash
-npm install --save \
-	adminplus \
-	bootstrap@4.0.0-alpha.2 \
-	jquery@2 \
-	tether
-```
+## Demos
+See [AdminPlus Lite Demo](http://adminplus.themekit.io) and [AdminPlus Premium Demo](http://themeforest.net/item/adminplus-bootstrap-4-admin-dashboard/full_screen_preview/14601290?ref=mosaicpro)
+> While AdminPlus Lite is free, there are *premium extras available* such as custom dashboard designs, custom components, custom pages, integration samples with various 3rd party plugins, dedicated support from our team and more!
 
-### index.html
-> Simple HTML boilerplate:
+## Introduction
+AdminPlus provides a variety of starter boilerplates for commonly used workflows and tooling such as gulp, browserify and webpack. 
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>AdminPlus</title>
+We also provide integration samples with popular front end libraries such as AngularJS, MeteorJS, Vue.js and server side libraries such as Laravel and Ruby on Rails.
 
-  <!-- AdminPlus CSS (includes Bootstrap) -->
-  <link type="text/css" href="node_modules/adminplus/dist/adminplus.css" rel="stylesheet">
+Get started with the most [basic usage example](docs/basic-usage.md).
 
-  <!-- jQuery -->
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  
-</head>
-<body>
-
-  <!-- Bootstrap 4 JS -->
-  <script src="node_modules/tether/dist/js/tether.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <!-- AdminPlus -->
-  <script src="node_modules/adminplus/dist/adminplus.js"></script>
-
-  <!-- App JS -->
-  <script src="main.js"></script>
-
-</body>
-</html>
-```
-
-### main.js
-> Simple JavaScript boilerplate:
-
-```js
-// Initialize AdminPlus Sidebars
-AdminPlus.Sidebar.init()
-```
-
---
-
+---
 
 ## Run locally
 

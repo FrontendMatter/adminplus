@@ -1,7 +1,7 @@
 var path = require('path')
 var WebpackConfig = require('themekit-webpack-config')
 var config = new WebpackConfig()
-	.withEntry('docs')
+	.withEntry('demo')
 	.withAlias({
 		'adminplus': path.resolve(__dirname, '../../..'),
 		'adminplus-demo': path.resolve(__dirname, '../..')

@@ -9,13 +9,6 @@
 		border-bottom: 1px solid $border-color;
 		color: $brand-primary;
 	}
-	.sidebar-user {
-		color: rgba(0,0,0, .84);
-		img { 
-			border: 1px solid rgba(255, 255, 255, 0.54); 
-		}
-		&:hover { color: $sidebar-light-link-color; }
-	}
 	.nav {
 		border-bottom:1px solid rgba(0,0,0, 0.05); 
 		.nav-item a:not(:only-child):before {
@@ -32,16 +25,17 @@
 			border-top:1px solid rgba(0,0,0, 0.05);
 			border-bottom:1px solid rgba(0,0,0, 0.05);
 		}
-		&.active, &.active:hover {
+		&.active, 
+		> .active,
+		&.active:hover {
 			background: rgba(0,0,0, .03);
 			a, 
 			a i { 
 				color: $sidebar-light-link-color; 
 			}
 		}
-		&.open li.active {
+		&.open > .active {
 			background: rgba(0,0,0, .03);
-			
 			a, 
 			a i { color: $sidebar-light-link-color; }
 		}
@@ -54,90 +48,9 @@
 			}
 		}
 		@include media-breakpoint-up(md) {
-		  &.active a { background: transparent; }
+		  &.active a, > .active a { background: transparent; }
 		}
   	}
-
-	.sidebar-user-center {
-		background: rgba(0,0,0, .05);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
-		
-		.sidebar-user-avatar {
-			img {
-				border:1px solid rgba(0, 0, 0, .12);
-			}
-		}
-		.user-info > a { color: $gray; &:hover { color:$brand-primary; }}
-
-		
-		.user-extras a { 
-			color: rgba(0,0,0, .24);
-			&:hover {
-				color: $gray;
-				text-decoration: none;
-			} 
-		}	
-	}
-
-	// SIDEBAR ACTIVITY
-	.sidebar-activity {
-		border-top: 1px solid rgba(0,0,0, .05); 
-		li { 
-			color: $gray-light;
-			background: rgba(0, 0, 0, 0.05);
-
-			border-bottom: 1px solid rgba(0,0,0, .05);
-			small {  color: rgba(0,0,0, .34); }  
-			a {  color: $gray-light;}
-
-			.sidebar-activity-icon {
-				background: rgba(0, 0, 0, .05);
-				color: $gray;
-				i {
-					position: relative;
-					top: 1px;  
-				}
-			}
-			// ON HOVER ITEM
-			&:hover, &.active {
-				background:transparent;
-				&, 
-				a { 
-					color: #212121; 
-					transition: all .7s;
-				}
-			}
-		} 
-	}
-	.sidebar-email {
-		.sidebar-email-item {
-			border-bottom:1px solid rgba(0,0,0, .05); 
-			a.nav-link {
-				color: $gray;
-				.sidebar-email-message {
-					color:$text-muted;
-				} 
-				&:hover {
-					background:  #efefef;
-				}
-			}
-			&.new {
-				a:after {
-					background: $brand-primary;
-				}
-			}
-			&.active a.nav-link, 
-			&.active a.nav-link:hover { 
-				background: $brand-primary;
-				* { color:#fff; }
-			}
-		}
-	}
-	.sidebar-stats {
-		border: 1px solid rgba(0,0,0, .12);
-		color: $text-muted;
-	}
-
 	.sidebar-header {
 		color: rgba(0,0,0, .54);
 	} 

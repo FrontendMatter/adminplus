@@ -1,36 +1,15 @@
 .sidebar-dark {
-	// SCAFFOLDING
 	color: rgba(255, 255, 255, 0.54) !important; 
-	
 	> p {
 		color: #ffffff;
 	}
-
-	// Sidebar Brand
 	.sidebar-brand {
 		background: rgba(0, 0, 0, .12); 
 		color: #fff;
 		border-bottom:1px solid rgba(0,0,0, 0.05);
 	}
-
-	// Sidebar User
-	.sidebar-user {
-		color: #fff;
-		img { 
-			border: 1px solid rgba(255, 255, 255, 0.54); 
-		}
-	}
-
-	// Sidebar Menu
 	.nav {
-
-		border-bottom:1px solid rgba(0,0,0, 0.05);
-	
-		// Has submenu
-		.nav-item a:not(:only-child) {
-			padding-right: 45px !important; 
-		}
-
+		border-bottom: 1px solid rgba(0,0,0, 0.05);
 		.nav-item a:not(:only-child):before {
 			color: rgba(255, 255, 255, .54);
 		}
@@ -51,14 +30,15 @@
 			border-top:1px solid rgba(0,0,0, 0.05);
 		}
 
-		&.active {
+		&.active, 
+		> .active {
 			background: rgba(255,255,255, .12);
 			a, 
 			a i { 
 				color: $sidebar-dark-link-color; 
 			}
 		}
-		&.open li.active {
+		&.open > .active {
 			background: rgba(255,255,255, .12);
 			a, 
 			a i { 
@@ -72,71 +52,7 @@
 			&:hover { background: rgba(255,255,255, .12); }
 		}
 		@include media-breakpoint-up(md) {
-			&.active a { background: transparent; }
-		}
-	}
-
-	.sidebar-user-center {
-		background: rgba(0,0,0, .05);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
-		
-		.sidebar-user-avatar {
-			img {
-				border:1px solid rgba(255, 255, 255, .54);
-			}
-		}
-		.user-info > a { color:#fff;}
-		
-		.user-extras a { 
-			color: rgba(255,255,255, .54);
-			&:hover {
-				color:#fff;
-				text-decoration: none;
-			} 
-		}	
-	}
-
-	// SIDEBAR ACTIVITY
-	.sidebar-activity {
-		li { 
-			border-bottom: 1px solid rgba(0,0,0, .05);
-			small {  color: rgba(255,255,255, .34); }  
-			a {  color: rgba(255,255,255, .54); }
-			.sidebar-activity-icon {
-				background: rgba(255,255,255, .12);
-			}
-			// ON HOVER ITEM
-			&:hover, &.active {
-				background: rgba(255,255,255, .12);
-				&, 
-				a { 
-					color:#fff; 
-					transition: all .7s;
-				}
-			}
-		} 
-	}
-
-	.sidebar-email {
-		.sidebar-email-item {
-			border-bottom:1px solid rgba(0,0,0, .05); 
-			a.nav-link {
-				color: rgba(255,255,255,.54);
-			}
-			&.new {
-				a:after {
-					background: #ffffff;
-				}
-			}
-			&:hover,
-			&.active a.nav-link, 
-			&.active a.nav-link:hover { 
-				background: rgba(255,255,255, .12);
-				* { color:#fff; }
-				.sidebar-email-message {
-					color: rgba(255,255,255,.54);
-				} 
-			}
+			&.active a, > .active a { background: transparent; }
 		}
 	}
 }

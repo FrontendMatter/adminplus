@@ -1,65 +1,65 @@
-$body-bg:                   rgba(0, 0, 0, 0.05);
-$font-family-base:          Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+///////////////////////////////////
+// MATERIAL DESIGN COLOR PALETTE //
+///////////////////////////////////
 
-$grid-gutter-width:			1.25rem;
+@import '../../node_modules/sass-md-colors/colors/variables';
 
-$red:                       #E53935;
-$pink:                      #D81B60;
-$purple:                    #8E24AA;
-$deep-purple:               #5E35B1;
-$indigo:                    #3949AB;
-$blue:                      #1E88E5;
-$light-blue:                #039BE5;
-$cyan:                      #00ACC1;
-$teal:                      #00897B;
+//////////////////////
+// CUSTOM VARIABLES //
+//////////////////////
 
-$green:                     #4CAF50;
-$yellow:                    #FFEB3B;
-$orange:                    #FF5722;
+$body-bg:						rgba(0, 0, 0, 0.05) !default;
+$font-family-base:				Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif !default;
 
-$brand-primary:             $light-blue;
-$brand-secondary:           #283593;
-$brand-warning:             #FF9800;
-$brand-info:                #00BCD4;
-$brand-success:             $green;
-$brand-danger:              $red;
+$grid-gutter-width:				1.25rem !default;
+$headings-font-weight:			400 !default;
 
-$btn-secondary-color:       #fff;
-$btn-secondary-bg:          $brand-secondary;
-$btn-secondary-border:      $brand-secondary;
+$brand-primary:					$light-blue-600 !default;
+$brand-secondary:				#283593 !default;
+$brand-warning:					#FF9800 !default;
+$brand-info:					#00BCD4 !default;
+$brand-success:					$green-600 !default;
+$brand-danger:					$red-600 !default;
 
-$card-border-radius:        3px;
-$breadcrumb-active-color:   rgba(0, 0, 0, 0.54);
-$breadcrumb-divider:        '>';
-$breadcrumb-divider-color:  rgba(0, 0, 0, 0.24);
-$breadcrumb-bg:             transparent;
+$btn-secondary-color:			#fff !default;
+$btn-secondary-bg:				$brand-secondary !default;
+$btn-secondary-border:			$brand-secondary !default;
 
-$state-success-bg:			lighten($brand-success, 43%);
-$state-info-bg:				lighten($brand-info, 54%);
-$state-warning-bg:			lighten($brand-warning, 43%);
-$state-danger-bg:			lighten($brand-danger, 40%);
+$card-border-radius:			3px !default;
+$breadcrumb-active-color:		rgba(0, 0, 0, 0.54) !default;
+$breadcrumb-divider:			'>' !default;
+$breadcrumb-divider-color:		rgba(0, 0, 0, 0.24) !default;
+$breadcrumb-bg:					transparent !default;
 
-$sidebar-width:             250px;
+$state-success-bg:				lighten($brand-success, 43%) !default;
+$state-info-bg:					lighten($brand-info, 54%) !default;
+$state-warning-bg:				lighten($brand-warning, 43%) !default;
+$state-danger-bg:				lighten($brand-danger, 40%) !default;
 
-$progress-bar-bg:           $brand-primary;
+$sidebar-width:					250px !default;
 
-$list-group-border-radius:  0;
-$btn-border-radius:         0;
+$progress-bar-bg:				$brand-primary !default;
 
-$navbar-height: 			56px;
-$navbar-line-height: 			54px;
-$navbar-padding-vertical:    0;
-$navbar-padding-horizontal:  0;
+$list-group-border-radius:		0 !default;
+$btn-border-radius:				0 !default;
 
-$border-color:				#e5e5e5;
+$navbar-height:					56px !default;
+$navbar-line-height:			54px !default;
+$navbar-padding-vertical:		0 !default;
+$navbar-padding-horizontal:		0 !default;
 
-$progress-bar-success-bg:   $brand-success;
-$dropdown-border-color:     $border-color;
+$border-color:					#e5e5e5 !default;
 
-$pagination-disabled-bg:	#efefef;
+$progress-bar-success-bg:		$brand-success !default;
+$dropdown-border-color:			$border-color !default;
 
-$sidebar-light-link-color: $brand-primary;
-$sidebar-dark-link-color: #fff;
+$pagination-disabled-bg:		#efefef !default;
 
-// BOOTSTRAP VARIABLES
+$sidebar-light-link-color:		$brand-primary !default;
+$sidebar-dark-link-color:		#fff !default;
+
+/////////////////////////////////
+// DEFAULT BOOTSTRAP VARIABLES //
+/////////////////////////////////
+
 @import '../../node_modules/bootstrap/scss/variables';

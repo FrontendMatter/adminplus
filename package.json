@@ -1,8 +1,7 @@
 {
   "name": "adminplus",
-  "version": "1.0.0",
-  "private": true,
-  "description": "AdminPlus - Bootstrap 4 Admin Dashboard",
+  "version": "1.0.0-alpha.1",
+  "description": "AdminPlus Lite - Bootstrap 4 Admin Template",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --config src/build/webpack.config.dev.js --progress --watch",
@@ -17,7 +16,6 @@
   },
   "license": "ISC",
   "peerDependencies": {
-    "bootstrap": "^4.0.0-alpha.2",
     "jquery": "^2.1.4"
   },
   "devDependencies": {
@@ -39,5 +37,9 @@
     "themekit-webpack-config": "^1.0.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.11"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "sass-md-colors": "^1.0.0"
   }
 }
