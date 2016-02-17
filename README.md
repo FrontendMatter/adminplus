@@ -1,4 +1,7 @@
 # AdminPlus - Bootstrap 4 Admin Template
+
+[![npm version](https://badge.fury.io/js/adminplus.svg)](https://badge.fury.io/js/adminplus)
+
 Clean and lightweight Bootstrap 4 Admin Template with awesome premium features. AdminPlus extends Bootstrap 4 with layout options, sidebar navigation and a modern theme and it's a perfect choice for a professional admin template.
 
 ![AdminPlus - Bootstrap 4 Admin Template](https://image-tf.s3.envato.com/files/171402185/preview.__large_preview.png)
