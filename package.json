@@ -9,11 +9,7 @@
     "build-dev": "webpack --config src/build/webpack.config.dev.js --progress"
   },
   "main": "dist/adminplus.js",
-  "author": {
-    "name": "MOSAICPRO",
-    "email": "contact@mosaicpro.biz",
-    "url": "http://themeforest.net/user/mosaicpro/portfolio"
-  },
+  "author": "MOSAICPRO <contact@mosaicpro.biz> (http://themeforest.net/user/mosaicpro/portfolio)",
   "license": "ISC",
   "peerDependencies": {
     "jquery": "^2.1.4"
@@ -41,5 +37,29 @@
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.2",
     "sass-md-colors": "^1.0.0"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themekit/adminplus.git"
+  },
+  "keywords": [
+    "adminplus",
+    "bootstrap",
+    "bootstrap4",
+    "admin",
+    "template",
+    "theme",
+    "premium",
+    "dashboard",
+    "layout",
+    "sidebar",
+    "themekit"
+  ],
+  "bugs": {
+    "url": "https://github.com/themekit/adminplus/issues"
+  },
+  "homepage": "https://github.com/themekit/adminplus#readme"
 }
