@@ -40,6 +40,15 @@ router.beforeEach(function () {
 	window.scrollTo(0, 0)
 })
 
+router.afterEach(function () {
+	setTimeout(() => {
+		window.ga('send', 'pageview', { 
+			page: `${ location.pathname }${ location.hash }`, 
+			title: document.title 
+		})
+	}, 50)
+})
+
 router.redirect({
 	'*': '/'
 })

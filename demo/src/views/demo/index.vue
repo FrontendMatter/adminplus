@@ -18,7 +18,7 @@
 
 	<!-- Sidebar -->
 	<div class="sidebar sidebar-left sidebar-dark bg-primary show-desktop" id="sidebar">
-		<a href="index.html" class="sidebar-brand">AdminPlus Lite</a>
+		<a href="#" class="sidebar-brand">AdminPlus Lite</a>
 		<div class="sidebar-header">Components</div>
 		<ul class="nav components-nav">
 			<li class="nav-item open">
