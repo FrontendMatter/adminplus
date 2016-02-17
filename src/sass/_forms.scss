@@ -1,7 +1,3 @@
-.form-control {
-  border-color: $gray-lighter;
-}
-
 .c-input {
   > input {
     &:checked ~ .c-indicator {
@@ -57,4 +53,8 @@
 // Focus state
 .file input:focus ~ .file-custom {
   @include box-shadow(0 0 0 .075rem #fff, 0 0 0 .2rem $brand-primary);
+}
+// Fix button 
+.input-group .form-control:last-child {
+  margin-left: -1px;
 }

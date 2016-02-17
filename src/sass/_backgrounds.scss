@@ -5,3 +5,6 @@
 .bg-orange { background: $orange-500; }
 .bg-transparent { background: transparent; }
 .bg-primary-light { background: lighten($brand-primary, 53%); }
+.bg-faded {
+  background-color: $body-bg;
+}

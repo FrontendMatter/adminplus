@@ -16,6 +16,11 @@
       bottom: 0;
     }
   }
+  &-demo {
+    position: relative;
+    display:block;
+    z-index:1;
+  }
 }
 
 // SIDEBAR TRANSITION

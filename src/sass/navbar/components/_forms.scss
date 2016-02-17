@@ -1,5 +1,6 @@
 .navbar .form-inline {
-  line-height: $navbar-height - 2px;
+  line-height: $navbar-height;
+  margin-right: $grid-gutter-width;
   .input-group {
     line-height: 0;
     border-right-color: transparent;

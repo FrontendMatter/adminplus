@@ -43,8 +43,8 @@ $progress-bar-bg:				$brand-primary !default;
 $list-group-border-radius:		0 !default;
 $btn-border-radius:				0 !default;
 
-$navbar-height:					56px !default;
-$navbar-line-height:			54px !default;
+$navbar-height:					56px;
+$navbar-line-height:			56px;
 $navbar-padding-vertical:		0 !default;
 $navbar-padding-horizontal:		0 !default;
 
@@ -58,8 +58,33 @@ $pagination-disabled-bg:		#efefef !default;
 $sidebar-light-link-color:		$brand-primary !default;
 $sidebar-dark-link-color:		#fff !default;
 
+$state-success-text:  			darken($brand-success,13%);
+$state-success-bg:              lighten($brand-success,48%);
+$state-success-border:          $state-success-bg;
+
+$state-primary-text:  			darken($brand-primary,13%);
+$state-info-bg:              lighten($brand-primary,48%);
+$state-info-border:          $state-info-bg;
+
+$state-warning-text:  			darken($brand-warning,13%);
+$state-warning-bg:              lighten($brand-warning,44%);
+$state-warning-border:          $state-warning-bg;
+
+$state-danger-text:  			darken($brand-danger,13%);
+$state-danger-bg:              lighten($brand-danger, 40%);
+$state-danger-border:          $state-danger-bg;
+
+$progress-bar-success-bg: 		$brand-success;
+$progress-bar-info-bg: 			$brand-info;
+$progress-bar-warning-bg: 		$brand-warning;
+$progress-bar-danger-bg: 		$brand-danger;
 /////////////////////////////////
 // DEFAULT BOOTSTRAP VARIABLES //
 /////////////////////////////////
 
 @import '../../node_modules/bootstrap/scss/variables';
+
+// use bootsrap gray
+$input-border-color:			$gray-lighter;
+$input-group-addon-border-color: $input-border-color;
+

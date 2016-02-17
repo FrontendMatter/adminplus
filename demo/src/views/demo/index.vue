@@ -36,6 +36,20 @@
 			<li class="nav-item"><a href="#label" class="nav-link">Label</a></li>
 			<li class="nav-item"><a href="#alert" class="nav-link">Alert</a></li>
 			<li class="nav-item"><a href="#card" class="nav-link">Card</a></li>
+			<li class="nav-item">
+				<a href="#navs" class="nav-link">Navs</a>
+				<ul>
+					<li><a href="#navs">Base</a></li>
+					<li><a href="#tabs">Tabs</a></li>
+					<li><a href="#pills">Pills </a></li>
+				</ul>
+			</li>
+			<li class="nav-item"><a href="#navbar" class="nav-link">Navbar</a></li>
+			<li class="nav-item"><a href="#sidebar-example" class="nav-link">Sidebar (AdminPlus)</a></li>
+			<li class="nav-item"><a href="#breadcrumb" class="nav-link">Breadcrumb</a></li>
+			<li class="nav-item"><a href="#pagination" class="nav-link">Pagination</a></li>
+			<li class="nav-item"><a href="#progress" class="nav-link">Progress</a></li>
+			<li class="nav-item"><a href="#list-group" class="nav-link">List Group</a></li>
 		</ul>
 	</div>
 
@@ -346,7 +360,7 @@
 					  <div class="col-lg-6">
 						<div class="input-group">
 						  <span class="input-group-btn">
-							<button class="btn btn-default" type="button">Go!</button>
+							<button class="btn btn-primary" type="button">Go!</button>
 						  </span>
 						  <input type="text" class="form-control" placeholder="Search for...">
 						</div>
@@ -365,11 +379,11 @@
 					  <div class="col-lg-offset-3 col-lg-6">
 						<div class="input-group">
 						  <span class="input-group-btn">
-							<button class="btn btn-default" type="button">Hate it</button>
+							<button class="btn btn-danger" type="button">Hate it</button>
 						  </span>
 						  <input type="text" class="form-control" placeholder="Product name">
 						  <span class="input-group-btn">
-							<button class="btn btn-default" type="button">Love it</button>
+							<button class="btn btn-success" type="button">Love it</button>
 						  </span>
 						</div>
 					  </div>
@@ -526,77 +540,496 @@
 				</div>
 			</div>
 			
+			<div class="page-heading center" id="navs">
+				<h2>Navs</h2>
+				<p class="lead">Navigation available in Bootstrap share general markup and styles, from the base .nav class to the active and disabled states. Swap modifier classes to switch between each style.</p>
+			</div>
+
 			<div class="card">
+
 				<div class="card-header">
-					<h4 class="card-title">Navs</h4>
+					<h4 class="card-title">Base nav</h4>
+				</div>
+				<div class="card-block">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Another link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Disabled</a>
+						</li>
+					</ul>
+					<hr>
+					<nav class="nav">
+						<a class="nav-link active" href="#">Active</a>
+						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link" href="#">Another link</a>
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</nav>
 				</div>
 			</div>
 			<div class="card">
 				<div class="card-header">
-					<h4 class="card-title">Navbar</h4>
+					<h4 class="card-title">Inline</h4>
+				</div>
+				<div class="card-block">
+					<nav class="nav nav-inline">
+						<a class="nav-link active" href="#">Active</a>
+						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link" href="#">Another link</a>
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</nav>
+					<hr>
+					<p>The same works for a navigation built with lists. (ul > li)</p>
+					<ul class="nav nav-inline">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Another link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Disabled</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card" id="tabs">
 				<div class="card-header">
-					<h4 class="card-title">Sidebar</h4>
+					<h4 class="card-title">Tabs</h4>
+				</div>
+				<div class="card-block">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active">Active</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Another link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled">Disabled</a>
+						</li>
+					</ul>
 				</div>
 			</div>
+			<h5 class="card-title">Tabs Attached to Card</h5>
 			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Breadcrumb</h4>
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link active" href="#first" data-toggle="tab">First</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#second" data-toggle="tab">Second</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#third" data-toggle="tab">Third</a>
+					</li>
+				</ul>
+				<div class="card-block tab-content">
+					<div class="tab-pane active" id="first"> Tabs in Card</div>
+					<div class="tab-pane" id="second"> Lorem ipsum dolor sit amet</div>
+					<div class="tab-pane" id="third"> Consectetur adipisicing elit. Rem, voluptates?</div>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card" id="pills">
 				<div class="card-header">
-					<h4 class="card-title">Pagination</h4>
+					<h4 class="card-title">
+						Pills
+					</h4>
 				</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Progress</h4>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">List Group</h4>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Modal</h4>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Scrollspy</h4>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Tooltips</h4>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Popovers</h4>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Collapse</h4>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Carousel</h4>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Utilities</h4>
+				<div class="card-block">
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Active</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Another link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Disabled</a>
+						</li>
+					</ul>
+
+					<hr>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Active</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Another link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Disabled</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 
+			<div class="page-heading center" id="navbar">
+				<h2>Navbar</h2>
+				<p class="lead">The navbar is a simple wrapper for positioning branding, navigation, and other elements into a concise navigation header. It’s easily extensible and, with the help of our collapse plugin, it can easily integrate offscreen content.</p>
+			</div>
+
+
+			<div class="card bg-faded">
+				<div class="card-header">
+					<h4 class="card-title">Suported content</h4>
+				</div>
+				<div class="card-block">
+					<nav class="navbar navbar-light bg-white navbar-full">
+						<a class="navbar-brand" href="#">Navbar</a>
+						<ul class="nav navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Features</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Pricing</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About</a>
+							</li>
+						</ul>
+						<form class="form-inline pull-xs-right m-r-1">
+							<input class="form-control" type="text" placeholder="Search">
+							<button class="btn btn-primary" type="submit">Search</button>
+						</form>
+					</nav>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h4 class="card-title">Color schemes</h4>
+				</div>
+				<div class="card-block">
+					<nav class="navbar navbar-dark bg-inverse">
+						<a class="navbar-brand" href="#">Navbar</a>
+						<ul class="nav navbar-nav">
+						<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Pricing</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+						</li>
+						</ul>
+						<form class="form-inline pull-xs-right">
+						<input class="form-control" type="text" placeholder="Search">
+						<button class="btn btn-white" type="submit">Search</button>
+						</form>
+					</nav>
+					<nav class="navbar navbar-dark bg-primary">
+						<a class="navbar-brand" href="#">Navbar</a>
+						<ul class="nav navbar-nav">
+						<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Pricing</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+						</li>
+						</ul>
+						<form class="form-inline pull-xs-right">
+						<input class="form-control" type="text" placeholder="Search">
+						<button class="btn btn-white" type="submit">Search</button>
+						</form>
+					</nav>
+					<nav class="navbar navbar-light" style="background-color: #e3f2fd; border-bottom:#e3f2fd">
+						<a class="navbar-brand" href="#">Navbar</a>
+						<ul class="nav navbar-nav">
+						<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Pricing</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+						</li>
+						</ul>
+						<form class="form-inline pull-xs-right">
+						<input class="form-control" type="text" placeholder="Search">
+						<button class="btn btn-primary" type="submit">Search</button>
+						</form>
+					</nav>
+				</div>
+			</div>
+			<div class="page-heading center" id="sidebar-example">
+				<h2>Sidebar</h2>
+				<p class="lead">The sidebar is a custm component for using lefr or right side branding, navigation, and other elements into a concise side block.</p>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h4 class="card-title">Content</h4>
+				</div>
+				<div class="card-block">
+					<div class="card">
+						<div class="sidebar sidebar-dark sidebar-left bg-primary sidebar-demo sidebar-left">
+							<a href="index.html" class="sidebar-brand">
+								<span class="icon-text">Sidebar Brand</span>
+							</a>
+							<div class="sidebar-header">Header</div>
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html"><i class="material-icons">person_outline</i><span class="icon-text">Menu Item</span></a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link"> 
+										<i class="material-icons">list</i>Submenu</a>
+									<ul>
+										<li><a href="#">Submenu Item</a></li>
+										<li><a href="#">Submenu Item</a></li>
+										<li><a href="#">Submenu Item</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link"> 
+									<i class="material-icons">business</i>Menu Item</a>
+								</li>
+							</ul>
+							<div class="sidebar-header">Text</div>
+							<p>I'm a senior UI designer that enjoys crafting static designs.</p>
+							<div class="sidebar-header">Tags</div>
+							<p>
+								<span class="label label-primary-outline">HTML</span>
+								<span class="label label-primary-outline">CSS</span>
+								<span class="label label-primary-outline">PHOTOSHOP</span>
+								<span class="label label-primary-outline">NODE</span>
+								<span class="label label-primary-outline">HTML</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h4 class="card-title">Sidebar Colors</h4>
+				</div>
+				<div class="card-block">
+						<div class="card">
+							<div class="sidebar sidebar-dark sidebar-left bg-primary sidebar-demo sidebar-left">
+								<div class="sidebar-header">Header</div>
+								<ul class="nav">
+									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="card bg-faded">
+							<div class="sidebar sidebar-light sidebar-left bg-white sidebar-demo">
+								<div class="sidebar-header">Header</div>
+								<ul class="nav">
+									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
+								</ul>
+							</div>
+						</div>					
+				</div>
+			</div>
+			
+			<div class="page-heading center" id="breadcrumb">
+				<h2>Breadcrumb</h2>
+				<p class="lead">Indicate the current page’s location within a navigational hierarchy.</p>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<h4 class="card-title">Example</h4>
+				</div>
+				<div class="card-block">
+					<ol class="breadcrumb">
+						<li class="active">Home</li>
+					</ol>
+						<ol class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li class="active">Library</li>
+					</ol>
+					<ol class="breadcrumb" style="margin-bottom: 5px;">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Library</a></li>
+						<li class="active">Data</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="page-heading center" id="pagination">
+				<h2>Pagination</h2>
+				<p class="lead">Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.</p>
+			</div>
+
+			<div class="card">
+				<div class="card-block">
+						<ul class="pagination">
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+									<span class="sr-only">Previous</span>
+								</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">4</a></li>
+							<li class="page-item"><a class="page-link" href="#">5</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+									<span class="sr-only">Next</span>
+								</a>
+							</li>
+						</ul>	
+						<hr>
+
+						<ul class="pagination">
+							<li class="page-item disabled">
+							<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+							<span class="sr-only">Previous</span>
+							</a>
+							</li>
+							<li class="page-item active">
+							<a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">4</a></li>
+							<li class="page-item"><a class="page-link" href="#">5</a></li>
+							<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+							<span class="sr-only">Next</span>
+							</a>
+							</li>
+						</ul>	
+						<hr>
+						<ul class="pagination">
+							<li class="page-item disabled">
+							<span class="page-link" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+							<span class="sr-only">Previous</span>
+							</span>
+							</li>
+							<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li>
+						</ul>
+						<hr>
+						<ul class="pager">
+							<li><a href="#">Previous</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+				</div>
+			</div>
+			<div class="page-heading center" id="progress">
+				<h2>Progress</h2>
+				<p class="lead">Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.</p>
+			</div>
+
+			
+			<div class="card">
+				<div class="card-block">
+					<progress class="progress" value="0" max="100">0%</progress>
+					<progress class="progress progress-primary" value="25" max="100">25%</progress>
+					<progress class="progress progress-gray" value="50" max="100">50%</progress>
+					<progress class="progress progress-success" value="75" max="100">75%</progress>
+					<progress class="progress progress-danger" value="100" max="100">100%</progress>
+					<hr>
+					<progress class="progress progress-striped progress-primary" value="10" max="100">10%</progress>
+					<progress class="progress progress-striped progress-success" value="25" max="100">25%</progress>
+					<progress class="progress progress-striped progress-gray" value="50" max="100">50%</progress>
+					<progress class="progress progress-striped progress-warning" value="75" max="100">75%</progress>
+					<progress class="progress progress-striped progress-danger" value="100" max="100">100%</progress>
+				</div>
+			</div>
+			<div class="page-heading center" id="list-group">
+				<h2>List Group</h2>
+				<p class="lead">List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>
+			</div>
+
+			<div class="card">
+				<div class="card-block">
+					<ul class="list-group">
+						<li class="list-group-item">Cras justo odio</li>
+						<li class="list-group-item">Dapibus ac facilisis in</li>
+						<li class="list-group-item">Morbi leo risus</li>
+						<li class="list-group-item">Porta ac consectetur ac</li>
+						<li class="list-group-item">Vestibulum at eros</li>
+					</ul>
+					<hr>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<span class="label label-default label-pill pull-xs-right">14</span>
+							Cras justo odio
+						</li>
+						<li class="list-group-item">
+							<span class="label label-default label-pill pull-xs-right">2</span>
+							Dapibus ac facilisis in
+						</li>
+						<li class="list-group-item">
+							<span class="label label-default label-pill pull-xs-right">1</span>
+							Morbi leo risus
+						</li>
+					</ul>
+					<hr>
+					<div class="list-group">
+						<a href="#" class="list-group-item active">
+						Cras justo odio
+						</a>
+						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item">Morbi leo risus</a>
+						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item">Vestibulum at eros</a>
+					</div>
+					<hr>
+					<div class="list-group">
+						<a href="#" class="list-group-item active">
+						<h4 class="list-group-item-heading">List group item heading</h4>
+						<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+						<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">List group item heading</h4>
+						<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+						<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">List group item heading</h4>
+						<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- // END .container-fluid -->
 
