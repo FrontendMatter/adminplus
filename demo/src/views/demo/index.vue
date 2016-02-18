@@ -2,17 +2,15 @@
 
 	<!-- Navbar -->
 	<nav class="navbar navbar-light bg-white navbar-full navbar-fixed-top left-md-sidebar">
-		<div class="container">
-			<button class="navbar-toggler pull-xs-left hidden-md-up" type="button" data-toggle="sidebar" data-target="#sidebar">
-				<span class="material-icons">menu</span>
-			</button>
-			<a href="index.html" class="navbar-brand">Components</a>
-			<ul class="nav navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#/">Docs</a>
-				</li>
-			</ul>
-		</div>
+		<button class="navbar-toggler pull-xs-left hidden-md-up" type="button" data-toggle="sidebar" data-target="#sidebar">
+			<span class="material-icons">menu</span>
+		</button>
+		<a href="index.html" class="navbar-brand">Components</a>
+		<ul class="nav navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#/">Docs</a>
+			</li>
+		</ul>
 	</nav>
 	<!-- // END Navbar -->
 
@@ -894,6 +892,7 @@
 
 			<div class="card">
 				<div class="card-block">
+					<div class="card-pagination">
 						<ul class="pagination">
 							<li class="page-item">
 								<a class="page-link" href="#" aria-label="Previous">
@@ -912,53 +911,57 @@
 									<span class="sr-only">Next</span>
 								</a>
 							</li>
-						</ul>	
+						</ul>
 						<hr>
-
 						<ul class="pagination">
 							<li class="page-item disabled">
-							<a class="page-link" href="#" aria-label="Previous">
-							<span aria-hidden="true">&laquo;</span>
-							<span class="sr-only">Previous</span>
-							</a>
+								<a class="page-link" href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+									<span class="sr-only">Previous</span>
+								</a>
 							</li>
 							<li class="page-item active">
-							<a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+								<a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
 							</li>
 							<li class="page-item"><a class="page-link" href="#">2</a></li>
 							<li class="page-item"><a class="page-link" href="#">3</a></li>
 							<li class="page-item"><a class="page-link" href="#">4</a></li>
 							<li class="page-item"><a class="page-link" href="#">5</a></li>
 							<li class="page-item">
-							<a class="page-link" href="#" aria-label="Next">
-							<span aria-hidden="true">&raquo;</span>
-							<span class="sr-only">Next</span>
-							</a>
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+									<span class="sr-only">Next</span>
+								</a>
 							</li>
 						</ul>	
 						<hr>
 						<ul class="pagination">
 							<li class="page-item disabled">
-							<span class="page-link" aria-label="Previous">
-							<span aria-hidden="true">&laquo;</span>
-							<span class="sr-only">Previous</span>
-							</span>
+								<span class="page-link" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+									<span class="sr-only">Previous</span>
+								</span>
 							</li>
-							<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li>
+							<li class="page-item active">
+								<span class="page-link">1 <span class="sr-only">(current)</span></span>
+							</li>
 						</ul>
-						<hr>
+					</div>
+					<hr>
+					<div class="card-pager">
 						<ul class="pager">
 							<li><a href="#">Previous</a></li>
 							<li><a href="#">Next</a></li>
 						</ul>
+					</div>
 				</div>
 			</div>
+
 			<div class="page-heading center" id="progress">
 				<h2>Progress</h2>
 				<p class="lead">Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.</p>
 			</div>
 
-			
 			<div class="card">
 				<div class="card-block">
 					<progress class="progress" value="0" max="100">0%</progress>
@@ -974,61 +977,56 @@
 					<progress class="progress progress-striped progress-danger" value="100" max="100">100%</progress>
 				</div>
 			</div>
+
 			<div class="page-heading center" id="list-group">
 				<h2>List Group</h2>
 				<p class="lead">List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>
 			</div>
 
-			<div class="card">
-				<div class="card-block">
-					<ul class="list-group">
-						<li class="list-group-item">Cras justo odio</li>
-						<li class="list-group-item">Dapibus ac facilisis in</li>
-						<li class="list-group-item">Morbi leo risus</li>
-						<li class="list-group-item">Porta ac consectetur ac</li>
-						<li class="list-group-item">Vestibulum at eros</li>
-					</ul>
-					<hr>
-					<ul class="list-group">
-						<li class="list-group-item">
-							<span class="label label-default label-pill pull-xs-right">14</span>
-							Cras justo odio
-						</li>
-						<li class="list-group-item">
-							<span class="label label-default label-pill pull-xs-right">2</span>
-							Dapibus ac facilisis in
-						</li>
-						<li class="list-group-item">
-							<span class="label label-default label-pill pull-xs-right">1</span>
-							Morbi leo risus
-						</li>
-					</ul>
-					<hr>
-					<div class="list-group">
-						<a href="#" class="list-group-item active">
-						Cras justo odio
-						</a>
-						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-						<a href="#" class="list-group-item">Morbi leo risus</a>
-						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
-						<a href="#" class="list-group-item">Vestibulum at eros</a>
-					</div>
-					<hr>
-					<div class="list-group">
-						<a href="#" class="list-group-item active">
-						<h4 class="list-group-item-heading">List group item heading</h4>
-						<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-						</a>
-						<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading">List group item heading</h4>
-						<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-						</a>
-						<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading">List group item heading</h4>
-						<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-						</a>
-					</div>
-				</div>
+			<ul class="list-group">
+				<li class="list-group-item">Cras justo odio</li>
+				<li class="list-group-item">Dapibus ac facilisis in</li>
+				<li class="list-group-item">Morbi leo risus</li>
+				<li class="list-group-item">Porta ac consectetur ac</li>
+				<li class="list-group-item">Vestibulum at eros</li>
+			</ul>
+
+			<ul class="list-group">
+				<li class="list-group-item">
+					<span class="label label-default label-pill pull-xs-right">14</span>
+					Cras justo odio
+				</li>
+				<li class="list-group-item">
+					<span class="label label-default label-pill pull-xs-right">2</span>
+					Dapibus ac facilisis in
+				</li>
+				<li class="list-group-item">
+					<span class="label label-default label-pill pull-xs-right">1</span>
+					Morbi leo risus
+				</li>
+			</ul>
+
+			<div class="list-group">
+				<a href="#" class="list-group-item active">Cras justo odio</a>
+				<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+				<a href="#" class="list-group-item">Morbi leo risus</a>
+				<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+				<a href="#" class="list-group-item">Vestibulum at eros</a>
+			</div>
+
+			<div class="list-group">
+				<a href="#" class="list-group-item active">
+				<h4 class="list-group-item-heading">List group item heading</h4>
+				<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				</a>
+				<a href="#" class="list-group-item">
+				<h4 class="list-group-item-heading">List group item heading</h4>
+				<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				</a>
+				<a href="#" class="list-group-item">
+				<h4 class="list-group-item-heading">List group item heading</h4>
+				<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				</a>
 			</div>
 		</div>
 		<!-- // END .container-fluid -->
