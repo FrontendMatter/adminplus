@@ -1,0 +1,11 @@
+.jumbotron {
+  padding: $jumbotron-padding/2;
+  border: $jumbotron-border;
+  margin-bottom: $grid-gutter-width;
+  > :last-child {
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-up(sm) {
+    padding: $jumbotron-padding;
+  }
+}

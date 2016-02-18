@@ -6,13 +6,11 @@
 }
 
 .card {
-  margin-bottom: 1.25rem;
+  margin-bottom: $grid-gutter-width;
   box-shadow: 0 2px 3px rgba(0, 0, 0, .05);
 
   &-primary, &-info, &-success, &-warning, &-red {
     color: #fff;
-    margin-bottom: .75rem;
-    border-radius: 3px; 
   }
 
   .card-header + .list-group {
@@ -22,7 +20,7 @@
   .card-header + .table {
     margin-bottom: 0;
     thead th { border-top: 0; } 
-    tr:first-child td { border-top:0 !important;}
+    tr:first-child td { border-top: 0 !important;}
     &.table-bordered {
       border: 0 !important;
       th, td {
@@ -35,11 +33,21 @@
       }
     }
   }
+  &, > .card-block {
+    > *:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
 }
 
-.card-footer-pagination {
+.card-pagination {
   line-height: 0;
   .pagination {
+    margin:0;
+  }
+}
+.card-pager {
+  .pager {
     margin:0;
   }
 }
@@ -176,8 +184,8 @@
   }
   .card-button-wrapper {
     position: absolute;
-    right: 1.25rem;
-    top: 1.25rem;
+    right: $grid-gutter-width;
+    top: $grid-gutter-width;
 
     .card-button {
       color: $text-muted;
@@ -210,4 +218,8 @@
   &:last-of-type {
     border-bottom: none;
   }
+}
+
+.card-group {
+  margin-bottom: $grid-gutter-width;
 }

@@ -8,76 +8,80 @@
 // CUSTOM VARIABLES //
 //////////////////////
 
-$body-bg:						rgba(0, 0, 0, 0.05) !default;
-$font-family-base:				Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif !default;
+$body-bg:                       rgba(0, 0, 0, 0.05) !default;
+$font-family-base:              Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif !default;
 
-$grid-gutter-width:				1.25rem !default;
-$headings-font-weight:			400 !default;
+$grid-gutter-width:             1.25rem !default;
+$headings-font-weight:          400 !default;
 
-$brand-primary:					$light-blue-600 !default;
-$brand-secondary:				#283593 !default;
-$brand-warning:					#FF9800 !default;
-$brand-info:					#00BCD4 !default;
-$brand-success:					$green-600 !default;
-$brand-danger:					$red-600 !default;
+$brand-primary:                 $light-blue-600 !default;
+$brand-secondary:               #283593 !default;
+$brand-warning:                 #FF9800 !default;
+$brand-info:                    #00BCD4 !default;
+$brand-success:                 $green-600 !default;
+$brand-danger:                  $red-600 !default;
 
-$btn-secondary-color:			#fff !default;
-$btn-secondary-bg:				$brand-secondary !default;
-$btn-secondary-border:			$brand-secondary !default;
+$btn-secondary-color:           #fff !default;
+$btn-secondary-bg:              $brand-secondary !default;
+$btn-secondary-border:          $brand-secondary !default;
 
-$card-border-radius:			3px !default;
-$breadcrumb-active-color:		rgba(0, 0, 0, 0.54) !default;
-$breadcrumb-divider:			'>' !default;
-$breadcrumb-divider-color:		rgba(0, 0, 0, 0.24) !default;
-$breadcrumb-bg:					transparent !default;
+$card-border-radius:            3px !default;
+$breadcrumb-active-color:       rgba(0, 0, 0, 0.54) !default;
+$breadcrumb-divider:            '>' !default;
+$breadcrumb-divider-color:      rgba(0, 0, 0, 0.24) !default;
+$breadcrumb-bg:                 transparent !default;
 
-$state-success-bg:				lighten($brand-success, 43%) !default;
-$state-info-bg:					lighten($brand-info, 54%) !default;
-$state-warning-bg:				lighten($brand-warning, 43%) !default;
-$state-danger-bg:				lighten($brand-danger, 40%) !default;
+$state-success-bg:              lighten($brand-success, 43%) !default;
+$state-info-bg:                 lighten($brand-info, 54%) !default;
+$state-warning-bg:              lighten($brand-warning, 43%) !default;
+$state-danger-bg:               lighten($brand-danger, 40%) !default;
 
-$sidebar-width:					250px !default;
+$sidebar-width:                 250px !default;
 
-$progress-bar-bg:				$brand-primary !default;
+$progress-bar-bg:               $brand-primary !default;
 
-$list-group-border-radius:		0 !default;
-$btn-border-radius:				0 !default;
+$list-group-border-radius:      0 !default;
+$btn-border-radius:             0 !default;
 
-$navbar-height:					56px;
-$navbar-line-height:			56px;
-$navbar-padding-vertical:		0 !default;
-$navbar-padding-horizontal:		0 !default;
+$navbar-height:                 56px;
+$navbar-line-height:            56px;
+$navbar-padding-vertical:       0 !default;
+$navbar-padding-horizontal:     0 !default;
 
-$border-color:					#e5e5e5 !default;
+$border-color:                  #e5e5e5 !default;
 
-$progress-bar-success-bg:		$brand-success !default;
-$dropdown-border-color:			$border-color !default;
+$progress-bar-success-bg:       $brand-success !default;
+$dropdown-border-color:         $border-color !default;
 
-$pagination-disabled-bg:		#efefef !default;
+$pagination-disabled-bg:        #efefef !default;
 
-$sidebar-light-link-color:		$brand-primary !default;
-$sidebar-dark-link-color:		#fff !default;
+$sidebar-light-link-color:      $brand-primary !default;
+$sidebar-dark-link-color:       #fff !default;
 
-$state-success-text:  			darken($brand-success,13%);
+$state-success-text:            darken($brand-success,13%);
 $state-success-bg:              lighten($brand-success,48%);
 $state-success-border:          $state-success-bg;
 
-$state-primary-text:  			darken($brand-primary,13%);
-$state-info-bg:              lighten($brand-primary,48%);
-$state-info-border:          $state-info-bg;
+$state-primary-text:            darken($brand-primary,13%);
+$state-info-bg:                 lighten($brand-primary,48%);
+$state-info-border:             $state-info-bg;
 
-$state-warning-text:  			darken($brand-warning,13%);
+$state-warning-text:            darken($brand-warning,13%);
 $state-warning-bg:              lighten($brand-warning,44%);
 $state-warning-border:          $state-warning-bg;
 
-$state-danger-text:  			darken($brand-danger,13%);
-$state-danger-bg:              lighten($brand-danger, 40%);
-$state-danger-border:          $state-danger-bg;
+$state-danger-text:             darken($brand-danger,13%);
+$state-danger-bg:               lighten($brand-danger, 40%);
+$state-danger-border:           $state-danger-bg;
 
-$progress-bar-success-bg: 		$brand-success;
-$progress-bar-info-bg: 			$brand-info;
-$progress-bar-warning-bg: 		$brand-warning;
-$progress-bar-danger-bg: 		$brand-danger;
+$progress-bar-success-bg:       $brand-success;
+$progress-bar-info-bg:          $brand-info;
+$progress-bar-warning-bg:       $brand-warning;
+$progress-bar-danger-bg:        $brand-danger;
+
+$jumbotron-bg:                  darken($body-bg, 5%) !default;
+$jumbotron-border:              1px solid rgba(0,0,0, .05) !default;
+
 /////////////////////////////////
 // DEFAULT BOOTSTRAP VARIABLES //
 /////////////////////////////////
@@ -85,6 +89,6 @@ $progress-bar-danger-bg: 		$brand-danger;
 @import '../../node_modules/bootstrap/scss/variables';
 
 // use bootsrap gray
-$input-border-color:			$gray-lighter;
+$input-border-color:            $gray-lighter;
 $input-group-addon-border-color: $input-border-color;
 
