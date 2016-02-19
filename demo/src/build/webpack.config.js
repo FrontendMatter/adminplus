@@ -7,6 +7,9 @@ var config = new WebpackConfig()
 		'adminplus-demo': path.resolve(__dirname, '../..')
 	})
 	.webpack({
+		sassLoader: {
+			importer: require('sass-importer-npm')
+		},
 		markdownLoader: {
 			highlight: function (code) {
 				return require('highlight.js').highlightAuto(code).value

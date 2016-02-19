@@ -40,6 +40,7 @@
     "html-loader": "^0.4.2",
     "markdown-loader": "^0.1.7",
     "node-sass": "^3.4.2",
+    "sass-importer-npm": "^1.0.0",
     "sass-loader": "^3.1.2",
     "style-import-loader": "^0.2.0",
     "style-loader": "^0.13.0",
