@@ -1,51 +1,44 @@
 .navbar-nav {
-  .nav-link {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .navbar > & {
-    margin-right: 1rem;
-  }
-  .dropdown-menu {
-    i.material-icons {
-      color: $gray-light;
-      margin-right: 3px;
-    }
-  }
+	.nav-link {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.navbar > & {
+		margin-right: 1rem;
+	}
+	.dropdown-menu {
+		i.material-icons {
+			color: $gray-light;
+			margin-right: 3px;
+		}
+	}
 }
 
 // COLLAPSING MENU
 @include media-breakpoint-down(sm) {
-  [class*="navbar-toggleable-xs"] > .navbar-nav {
-    clear: both;
-    padding: 15px;
-    display: block;
-    width: 100%;
-    line-height: 34px;
-    .nav-item {
-      float: none;
-      display: block;
-      margin-left: 0;
-    }
-  }
-}
-@include media-breakpoint-down(sm) {
-  .navbar-toggleable-xs {
-    display: none !important;
-    &.collapse.in,
-    &.collapsing {
-      display: block !important;
-    }
-  }
-}
+	.navbar-toggleable-xs {
+		display: none !important;
+		position: fixed;
+		top: $navbar-height;
+		left: 0;
+		right: 0;
 
-// REGULAR & COLLAPSED MENU FIXES
-@include media-breakpoint-down(sm) {
-  .navbar-toggleable-xs  {
-    position: fixed;
-    top: $navbar-height;
-    left: 0;
-    right: 0; 
-    background: $brand-primary;
-  }
+		&.collapse.in,
+		&.collapsing {
+			display: block !important;
+		}
+
+		> .navbar-nav {
+			clear: both;
+			padding: 15px;
+			display: block;
+			width: 100%;
+			line-height: 34px;
+			.nav-item {
+				float: none;
+				display: block;
+				margin-left: 0;
+			}
+		}
+	}
 }

@@ -1,0 +1,9 @@
+// NAVBAR + SIDEBAR
+@include media-breakpoint-up(md) {
+	.left-md-sidebar {
+		left: $sidebar-width;
+	}
+	.right-md-sidebar {
+		right: $sidebar-width;
+	}
+}

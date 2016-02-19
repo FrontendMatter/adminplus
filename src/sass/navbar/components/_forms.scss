@@ -1,35 +1,35 @@
 .navbar .form-inline {
-  line-height: $navbar-height;
-  margin-right: $grid-gutter-width;
-  .input-group {
-    line-height: 0;
-    border-right-color: transparent;
-    position: relative;
-    .form-control {
-      z-index: 1040;
-      padding-right: 50px;
-      border-radius: 5px;
-      border-color: transparent;
+	line-height: $navbar-height;
+	margin-right: $grid-gutter-width;
+	.input-group {
+		line-height: 0;
+		border-right-color: transparent;
+		position: relative;
+		.form-control {
+			z-index: 1040;
+			padding-right: 50px;
+			border-radius: 5px;
+			border-color: transparent;
 
-    }
-    .input-group-btn {
-      position: absolute;
-      right:0;
-      z-index: 1041;
-      .btn {
-        background: transparent;
-        &:hover,
-        &:active,
-        &:focus {
-          outline: none;
-        }
+		}
+		.input-group-btn {
+			position: absolute;
+			right: 0;
+			z-index: 1041;
+			.btn {
+				background: transparent;
+				&:hover,
+				&:active,
+				&:focus {
+					outline: none;
+				}
 
-        i.material-icons {
-          position: relative;
-          top:-1px;
-        }
-        padding-right: 8px;
-      }
-    }
-  }
+				i.material-icons {
+					position: relative;
+					top: -1px;
+				}
+				padding-right: 8px;
+			}
+		}
+	}
 }

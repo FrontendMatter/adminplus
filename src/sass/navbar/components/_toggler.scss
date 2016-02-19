@@ -1,0 +1,10 @@
+.navbar-toggler {
+	outline: none;
+	line-height: $navbar-height;
+	padding-top: 0; 
+	padding-bottom: 0;
+	.material-icons {
+		vertical-align: top;
+		line-height: $navbar-height - 2;
+	}
+}

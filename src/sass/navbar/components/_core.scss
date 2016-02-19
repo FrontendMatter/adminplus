@@ -1,28 +1,8 @@
 // Navbar
 .navbar {
-  margin-bottom: $grid-gutter-width;
-  border-bottom: 1px solid rgba(0,0,0, .1);
-  height: $navbar-height;
-  padding: 0;
-  line-height: $navbar-height;
-  .navbar-toggler {
-    outline: none;
-    line-height: $navbar-height;
-    padding-top: 0; 
-    padding-bottom: 0;
-    .material-icons {
-      vertical-align: top;
-      line-height: $navbar-height - 2;
-    }
-  }
-}
-
-// NAVBAR SPACINGS FOR LEFT/RIGHT SIDEBAR
-@include media-breakpoint-up(md) {
-  .left-md-sidebar {
-    left: $sidebar-width;
-  }
-  .right-md-sidebar {
-    right: $sidebar-width;
-  }
+	margin-bottom: $grid-gutter-width;
+	border-bottom: 1px solid rgba(0,0,0, .1);
+	height: $navbar-height;
+	padding: 0;
+	line-height: $navbar-height;
 }
