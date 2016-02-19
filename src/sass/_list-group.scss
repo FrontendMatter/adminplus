@@ -1,6 +1,15 @@
 .list-group {
 	margin-bottom: $grid-gutter-width;
 }
+
+.list-group-fit > .list-group-item {
+	border-left: none;
+	border-right: none;
+	&:last-of-type {
+		border-bottom: none;
+	}
+}
+
 .list-group-sm .list-group-item {
 	padding: .35rem .70rem;
 }

@@ -145,16 +145,6 @@
 	}
 }
 
-// LIST IN CARD
-.card > .list-group .list-group-item {
-	border-color: $card-border-color;
-	border-left: none;
-	border-right: none;
-	&:last-of-type {
-		border-bottom: none;
-	}
-}
-
 .card-group {
 	margin-bottom: $grid-gutter-width;
 }

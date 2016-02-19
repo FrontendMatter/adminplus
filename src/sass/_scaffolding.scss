@@ -1,6 +1,13 @@
+@import 'functions/strip-unit';
+
 body {
 	margin-top: $navbar-height;
 	position: relative;
+}
+
+// NAVBAR FIXED LAYOUT SPACING
+.ls-top-navbar {
+	margin-top: $navbar-height + ($font-size-root * strip-unit($grid-gutter-width));
 }
 
 .container,
