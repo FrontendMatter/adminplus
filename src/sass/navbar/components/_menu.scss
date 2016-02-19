@@ -1,11 +1,11 @@
 .navbar-nav {
+	margin-right: $grid-gutter-width;
+	
 	.nav-link {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-	.navbar > & {
-		margin-right: 1rem;
-	}
+
 	.dropdown-menu {
 		i.material-icons {
 			color: $gray-light;

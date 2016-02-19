@@ -5,7 +5,7 @@
 		<button class="navbar-toggler pull-xs-left hidden-md-up" type="button" data-toggle="sidebar" data-target="#sidebar">
 			<span class="material-icons">menu</span>
 		</button>
-		<a href="index.html" class="navbar-brand">Components</a>
+		<a href="index.html" class="navbar-brand first-child-md">Components</a>
 		<ul class="nav navbar-nav">
 			<li class="nav-item">
 				<a class="nav-link" href="#/">Docs</a>
@@ -686,12 +686,7 @@
 				<p class="lead">The navbar is a simple wrapper for positioning branding, navigation, and other elements into a concise navigation header. It’s easily extensible and, with the help of our collapse plugin, it can easily integrate offscreen content.</p>
 			</div>
 
-
-			<div class="card bg-faded">
-				<div class="card-header">
-					<h4 class="card-title">Suported content</h4>
-				</div>
-				<div class="card-block">
+			<div class="card">
 					<nav class="navbar navbar-light bg-white navbar-full">
 						<a class="navbar-brand" href="#">Navbar</a>
 						<ul class="nav navbar-nav">
@@ -708,82 +703,93 @@
 								<a class="nav-link" href="#">About</a>
 							</li>
 						</ul>
-						<form class="form-inline pull-xs-right m-r-1">
-							<input class="form-control" type="text" placeholder="Search">
-							<button class="btn btn-primary" type="submit">Search</button>
+					
+						<!-- Search -->
+						<form class="form-inline pull-xs-right hidden-sm-down">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for...">
+								<span class="input-group-btn">
+									<button class="btn" type="button"><i class="material-icons">search</i></button>
+								</span>
+							</div>
 						</form>
+						<!-- // END Search -->
+
 					</nav>
+				<div class="container-fluid">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odit officia magni error ipsam incidunt odio aut magnam quibusdam voluptatem?</p>
 				</div>
 			</div>
 			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Color schemes</h4>
+				<nav class="navbar navbar-dark bg-inverse navbar-full">
+					
+						<a class="navbar-brand" href="#">Navbar</a>
+						<ul class="nav navbar-nav">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Features</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Pricing</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About</a>
+							</li>
+						</ul>
+						
+						<!-- Search -->
+						<form class="form-inline pull-xs-right hidden-sm-down">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search">
+								<span class="input-group-btn">
+									<button class="btn" type="button"><i class="material-icons">search</i></button>
+								</span>
+							</div>
+						</form>
+						<!-- // END Search -->
+					
+				</nav>
+				<div class="container-fluid">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quo rerum ducimus officia. Nulla earum est cum quisquam quam fugiat.</p>
 				</div>
-				<div class="card-block">
-					<nav class="navbar navbar-dark bg-inverse">
+			</div>
+			<div class="card">
+
+					<nav class="navbar navbar-dark bg-primary navbar-full">
 						<a class="navbar-brand" href="#">Navbar</a>
 						<ul class="nav navbar-nav">
-						<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-						</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Features</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Pricing</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About</a>
+							</li>
 						</ul>
-						<form class="form-inline pull-xs-right">
-						<input class="form-control" type="text" placeholder="Search">
-						<button class="btn btn-white" type="submit">Search</button>
+					
+						<!-- Search -->
+						<form class="navbar-form form-inline pull-xs-right hidden-sm-down">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search">
+								<span class="input-group-btn">
+									<button class="btn" type="button"><i class="material-icons">search</i></button>
+								</span>
+							</div>
 						</form>
+						<!-- // END Search -->
+
 					</nav>
-					<nav class="navbar navbar-dark bg-primary">
-						<a class="navbar-brand" href="#">Navbar</a>
-						<ul class="nav navbar-nav">
-						<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-						</li>
-						</ul>
-						<form class="form-inline pull-xs-right">
-						<input class="form-control" type="text" placeholder="Search">
-						<button class="btn btn-white" type="submit">Search</button>
-						</form>
-					</nav>
-					<nav class="navbar navbar-light" style="background-color: #e3f2fd; border-bottom:#e3f2fd">
-						<a class="navbar-brand" href="#">Navbar</a>
-						<ul class="nav navbar-nav">
-						<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-						</li>
-						</ul>
-						<form class="form-inline pull-xs-right">
-						<input class="form-control" type="text" placeholder="Search">
-						<button class="btn btn-primary" type="submit">Search</button>
-						</form>
-					</nav>
-				</div>
+					<div class="container-fluid">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eos voluptate eaque officia eligendi quod harum cupiditate labore tenetur sit?</p>
+					</div>
+				
 			</div>
 			<div class="page-heading center" id="sidebar-example">
 				<h2>Sidebar</h2>

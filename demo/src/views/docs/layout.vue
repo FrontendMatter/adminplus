@@ -3,7 +3,7 @@
 	<nav class="navbar navbar-dark bg-primary navbar-full navbar-fixed-top">
 		<div class="container">
 			<a class="navbar-brand m-r-2" href="#">AdminPlus Lite</a>
-			<button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="true">
+			<button class="navbar-toggler hidden-md-up pull-xs-right last-child-xs" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="true">
             	<span class="material-icons">menu</span>
         	</button>
 	  		<div class="collapse navbar-toggleable-xs" id="navbarMenu">
