@@ -2,7 +2,7 @@
 // MATERIAL DESIGN COLOR PALETTE //
 ///////////////////////////////////
 
-@import '../../node_modules/sass-md-colors/colors/variables';
+@import 'sass-md-colors/colors/variables';
 
 //////////////////////
 // CUSTOM VARIABLES //
@@ -86,7 +86,7 @@ $jumbotron-border:              1px solid rgba(0,0,0, .05) !default;
 // DEFAULT BOOTSTRAP VARIABLES //
 /////////////////////////////////
 
-@import '../../node_modules/bootstrap/scss/variables';
+@import 'bootstrap/scss/variables';
 
 // use bootsrap gray
 $input-border-color:            $gray-lighter;

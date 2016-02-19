@@ -7,6 +7,9 @@ var config = new WebpackConfig()
 		'adminplus': path.resolve(__dirname, '..')
 	})
 	.webpack({
+		sassLoader: {
+			importer: require('sass-importer-npm')
+		},
 		sassImportLoader: {
 			base: './src/sass/_variables.scss'
 		}
