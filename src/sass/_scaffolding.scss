@@ -1,23 +1,23 @@
 body {
-  margin-top: $navbar-height;
-  position: relative;
+	margin-top: $navbar-height;
+	position: relative;
 }
 
 .container,
 .container-fluid {
-  padding-left: $grid-gutter-width;
-  padding-right: $grid-gutter-width;
+	padding-left: $grid-gutter-width;
+	padding-right: $grid-gutter-width;
 }
 
 .page-heading {
-  padding: $grid-gutter-width 0;
+	padding: $grid-gutter-width 0;
 }
 
 .content-wrapper, 
 .content-wrapper > .container-fluid,
 div.page-heading {
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 a.text-muted:hover {
@@ -26,12 +26,12 @@ a.text-muted:hover {
 }
 
 blockquote {
-  border-left: 2px solid #efefef;
-  padding-left: 10px;
-  font-size: .9rem;
+	border-left: 2px solid #efefef;
+	padding-left: 10px;
+	font-size: .9rem;
 }
 
 .label-primary-outline {
-  color: $brand-primary;
-  background: #ffffff;
+	color: $brand-primary;
+	background: #ffffff;
 }

@@ -1,60 +1,119 @@
+// replacement for .help-block (BS3)
+.text-help {
+	color: $text-muted;
+	margin-top: .325rem;
+	display: block;
+}
+
+////////////////////////////////////////////
+// BS4 (alpha.2) checkbox and radio fixes //
+////////////////////////////////////////////
+
+.radio label,
+.checkbox label {
+	padding-left: 1.5rem;
+}
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"],
+.radio input[type="radio"], 
+.radio-inline input[type="radio"] {
+	margin-left: -1.5rem;
+}
+.radio-inline,
+.checkbox-inline {
+	padding-left: 1.5rem;
+}
+// initially with position: static 
+// :only-child doesn't count text nodes 
+// which makes this rule apply to input + text as well
+// not just when single input as intended
+.checkbox label input:only-child, 
+.radio label input:only-child {
+	position: absolute;
+}
+
+// remove margin bottom for last-child form elements
+form > *:last-child {
+	margin-bottom: 0;
+}
+// remove margin bottom for checkbox & radio when used in form-group grid columns
+// in horizontal forms
+.form-group > [class*="col-"] {
+	> .checkbox,
+	> .radio {
+		margin-bottom: 0;
+	}
+}
+
+//////////////////////////
+// Custom form controls //
+//////////////////////////
+
 .c-input {
-  > input {
-    &:checked ~ .c-indicator {
-      background-color: $brand-primary;
-    }
+	> input {
+		&:checked ~ .c-indicator {
+			background-color: $brand-primary;
+		}
 
-    &:focus ~ .c-indicator {
-      // the mixin is not used here to make sure there is feedback
-      box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem $brand-primary;
-    }
+		&:focus ~ .c-indicator {
+			// the mixin is not used here to make sure there is feedback
+			box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem $brand-primary;
+		}
 
-    &:active ~ .c-indicator {
-      background-color: lighten($brand-primary,20%);
-    }
-  }
+		&:active ~ .c-indicator {
+			background-color: lighten($brand-primary,20%);
+		}
+	}
 }
-
 .c-checkbox {
-  input:indeterminate ~ .c-indicator {
-    background-color: $brand-primary;
-  }
+	input:indeterminate ~ .c-indicator {
+		background-color: $brand-primary;
+	}
 }
-
 .c-inputs-stacked {
-  position: relative;
-  .c-input {
-    display: block;
-    line-height: 1rem;
-    &::after {
-      display: block;
-      margin-bottom: .5rem;
-      content: "";
-    }
-    &:last-child {
-      &, 
-      &::after {
-        margin-bottom: 0;
-      }
-      
-    }
-    + .c-input {
-      margin-left: 0;
-    }
-  }
+	position: relative;
+	.c-input {
+		display: block;
+		line-height: 1rem;
+		&::after {
+			display: block;
+			margin-bottom: .5rem;
+			content: "";
+		}
+		&:last-child {
+			&, 
+			&::after {
+				margin-bottom: 0;
+			}
+			
+		}
+		+ .c-input {
+			margin-left: 0;
+		}
+	}
+}
+.c-select {
+	&:focus {
+		border-color: $brand-primary;
+	}
 }
 
-.c-select {
-  &:focus {
-    border-color: $brand-primary;
-  }
+// fix input-group button
+.input-group .form-control:last-child {
+	margin-left: -1px;
 }
+
+///////////
+// Files //
+///////////
 
 // Focus state
 .file input:focus ~ .file-custom {
-  @include box-shadow(0 0 0 .075rem #fff, 0 0 0 .2rem $brand-primary);
+	@include box-shadow(0 0 0 .075rem #fff, 0 0 0 .2rem $brand-primary);
 }
-// Fix button 
-.input-group .form-control:last-child {
-  margin-left: -1px;
+.file-custom::before {
+	top: auto;
+}
+.file {
+	margin-bottom: 0;
 }

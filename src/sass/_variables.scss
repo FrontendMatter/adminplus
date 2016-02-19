@@ -58,37 +58,42 @@ $pagination-disabled-bg:        #efefef !default;
 $sidebar-light-link-color:      $brand-primary !default;
 $sidebar-dark-link-color:       #fff !default;
 
-$state-success-text:            darken($brand-success,13%);
-$state-success-bg:              lighten($brand-success,48%);
-$state-success-border:          $state-success-bg;
+$state-success-text:            darken($brand-success, 13%) !default;
+$state-success-bg:              lighten($brand-success, 48%) !default;
+$state-success-border:          $state-success-bg !default;
 
-$state-primary-text:            darken($brand-primary,13%);
-$state-info-bg:                 lighten($brand-primary,48%);
-$state-info-border:             $state-info-bg;
+$state-primary-text:            darken($brand-primary, 13%) !default;
+$state-info-bg:                 lighten($brand-primary, 48%) !default;
+$state-info-border:             $state-info-bg !default;
 
-$state-warning-text:            darken($brand-warning,13%);
-$state-warning-bg:              lighten($brand-warning,44%);
-$state-warning-border:          $state-warning-bg;
+$state-warning-text:            darken($brand-warning, 13%) !default;
+$state-warning-bg:              lighten($brand-warning, 44%) !default;
+$state-warning-border:          $state-warning-bg !default;
 
-$state-danger-text:             darken($brand-danger,13%);
-$state-danger-bg:               lighten($brand-danger, 40%);
-$state-danger-border:           $state-danger-bg;
+$state-danger-text:             darken($brand-danger, 13%) !default;
+$state-danger-bg:               lighten($brand-danger, 40%) !default;
+$state-danger-border:           $state-danger-bg !default;
 
-$progress-bar-success-bg:       $brand-success;
-$progress-bar-info-bg:          $brand-info;
-$progress-bar-warning-bg:       $brand-warning;
-$progress-bar-danger-bg:        $brand-danger;
+$progress-bar-success-bg:       $brand-success !default;
+$progress-bar-info-bg:          $brand-info !default;
+$progress-bar-warning-bg:       $brand-warning !default;
+$progress-bar-danger-bg:        $brand-danger !default;
 
 $jumbotron-bg:                  darken($body-bg, 5%) !default;
 $jumbotron-border:              1px solid rgba(0,0,0, .05) !default;
+
+$gray-dark:                     #373a3c !default;
+$gray:                          #55595c !default;
+$gray-light:                    #818a91 !default;
+$gray-lighter:                  #eceeef !default;
+$gray-lightest:                 #f7f7f9 !default;
+
+$input-border-color:                $gray-lighter !default;
+$input-group-addon-border-color:    $input-border-color !default;
 
 /////////////////////////////////
 // DEFAULT BOOTSTRAP VARIABLES //
 /////////////////////////////////
 
 @import 'bootstrap/scss/variables';
-
-// use bootsrap gray
-$input-border-color:            $gray-lighter;
-$input-group-addon-border-color: $input-border-color;
 

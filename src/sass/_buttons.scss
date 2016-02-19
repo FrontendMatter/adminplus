@@ -1,67 +1,61 @@
 // BUTTON SIZE
 .btn-xs {
-  // line-height: ensure proper height of button next to small input
-  @include button-size($btn-padding-y-sm/2, $btn-padding-x-sm/2, $font-size-xs, $line-height-sm/2, $btn-border-radius-sm);
+	// line-height: ensure proper height of button next to small input
+	@include button-size($btn-padding-y-sm/2, $btn-padding-x-sm/2, $font-size-xs, $line-height-sm/2, $btn-border-radius-sm);
 }
 
 // BUTTON VARIANT
 .btn-rounded {
-  border-radius: 5px;
+	border-radius: 5px;
 }
-
 .btn-rounded-deep {
-  border-radius: 20px;
+	border-radius: 20px;
 }
-
 .btn-circle {
-  border-radius: 40px;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  i {
-    margin-top:-1px;
-  }
-  &-large {
-    border-radius: 50px;
-    padding: 0;
-    width: 50px;
-    height: 50px;
-    line-height: 48px;
-    i {
-      font-size: 28px;
-    }
-  }
+	border-radius: 40px;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	line-height: 38px;
+	i {
+		margin-top: -1px;
+	}
+	&-large {
+		border-radius: 50px;
+		padding: 0;
+		width: 50px;
+		height: 50px;
+		line-height: 48px;
+		i {
+			font-size: 28px;
+		}
+	}
 }
-
-
 
 // BUTTON STYLE
 .btn-white {
-  @include button-variant($gray-light, #fff, $gray-lighter);
+	@include button-variant($gray-light, #fff, $gray-lighter);
 }
-
 .btn-default {
-  @extend .btn-white;
+	@extend .btn-white;
 }
-
 .btn-gradient {
-  &.btn-primary {
-    background: linear-gradient($brand-primary, darken($brand-primary,12%));
-  }
-  &.btn-secondary {
-    background: linear-gradient($brand-secondary, darken($brand-secondary,12%));
-  }
-  &.btn-success {
-    background: linear-gradient($brand-success, darken($brand-success,12%));
-  }
-  &.btn-info {
-    background: linear-gradient($brand-info, darken($brand-info,12%));
-  }
-  &.btn-warning {
-    background: linear-gradient($brand-warning, darken($brand-warning,12%));
-  }
-  &.btn-danger {
-    background: linear-gradient($brand-danger, darken($brand-danger,12%));
-  }
+	&.btn-primary {
+		background: linear-gradient($brand-primary, darken($brand-primary, 12%));
+	}
+	&.btn-secondary {
+		background: linear-gradient($brand-secondary, darken($brand-secondary, 12%));
+	}
+	&.btn-success {
+		background: linear-gradient($brand-success, darken($brand-success, 12%));
+	}
+	&.btn-info {
+		background: linear-gradient($brand-info, darken($brand-info, 12%));
+	}
+	&.btn-warning {
+		background: linear-gradient($brand-warning, darken($brand-warning, 12%));
+	}
+	&.btn-danger {
+		background: linear-gradient($brand-danger, darken($brand-danger, 12%));
+	}
 }
