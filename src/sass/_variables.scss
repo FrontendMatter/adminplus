@@ -15,7 +15,7 @@ $grid-gutter-width:             1.25rem !default;
 $headings-font-weight:          400 !default;
 
 $brand-primary:                 $light-blue-600 !default;
-$brand-secondary:               #283593 !default;
+$brand-secondary:               darken($brand-primary,18%) !default;
 $brand-warning:                 #FF9800 !default;
 $brand-info:                    #00BCD4 !default;
 $brand-success:                 $green-600 !default;
@@ -99,4 +99,3 @@ $input-group-addon-border-color:    $input-border-color !default;
 /////////////////////////////////
 
 @import 'bootstrap/scss/variables';
-

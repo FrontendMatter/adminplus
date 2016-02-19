@@ -18,6 +18,10 @@
 			color: $sidebar-light-link-color;  
 		}
 		.nav-item.nav-heading { color: $text-muted; }
+		a .label {
+			background: rgba(0,0,0, .05);
+			color: $text-muted;
+		}
 	}
 	.nav-item {
 		&.open {
@@ -34,7 +38,7 @@
 				color: $sidebar-light-link-color; 
 			}
 		}
-		&.open > .active {
+		&.open .active {
 			background: rgba(0,0,0, .03);
 			a, 
 			a i { color: $sidebar-light-link-color; }
