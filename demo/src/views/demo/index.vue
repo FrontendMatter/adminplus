@@ -2,8 +2,14 @@
 
 	<!-- Navbar -->
 	<nav class="navbar navbar-light bg-white navbar-full navbar-fixed-top left-md-sidebar">
+
+		<!-- Toggle Sidebar -->
 		<button class="navbar-toggler pull-xs-left hidden-md-up" type="button" data-toggle="sidebar" data-target="#sidebar"><span class="material-icons">menu</span></button>
-		<span class="navbar-brand">Components</span>
+
+		<!-- Brand -->
+		<span class="navbar-brand first-child-md">Components</span>
+
+		<!-- Menu -->
 		<ul class="nav navbar-nav">
 			<li class="nav-item">
 				<a class="nav-link" v-link="{ name: 'docs.home' }">Docs</a>
@@ -14,7 +20,11 @@
 
 	<!-- Sidebar -->
 	<div class="sidebar sidebar-left sidebar-dark bg-primary show-desktop" id="sidebar">
+
+		<!-- Brand -->
 		<a v-link="{ name: 'docs.home' }" class="sidebar-brand">AdminPlus Lite</a>
+
+		<!-- Components -->
 		<div class="sidebar-header">Components</div>
 		<ul class="nav components-nav">
 			<li class="nav-item open">
@@ -41,7 +51,7 @@
 				</ul>
 			</li>
 			<li class="nav-item"><a href="#navbar" class="nav-link">Navbar</a></li>
-			<li class="nav-item"><a href="#sidebar-example" class="nav-link">Sidebar (AdminPlus)</a></li>
+			<li class="nav-item"><a href="#sidebar-example" class="nav-link">Sidebar</a></li>
 			<li class="nav-item"><a href="#breadcrumb" class="nav-link">Breadcrumb</a></li>
 			<li class="nav-item"><a href="#pagination" class="nav-link">Pagination</a></li>
 			<li class="nav-item"><a href="#progress" class="nav-link">Progress</a></li>
@@ -684,105 +694,66 @@
 				<p class="lead">The navbar is a simple wrapper for positioning branding, navigation, and other elements into a concise navigation header. It’s easily extensible and, with the help of our collapse plugin, it can easily integrate offscreen content.</p>
 			</div>
 
-
-			<div class="card bg-faded">
-				<div class="card-header">
-					<h4 class="card-title">Suported content</h4>
-				</div>
-				<div class="card-block">
-					<nav class="navbar navbar-light bg-white navbar-full">
-						<a class="navbar-brand" href="#">Navbar</a>
-						<ul class="nav navbar-nav">
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Features</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Pricing</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">About</a>
-							</li>
-						</ul>
-						<form class="form-inline pull-xs-right m-r-1">
-							<input class="form-control" type="text" placeholder="Search">
-							<button class="btn btn-primary" type="submit">Search</button>
-						</form>
-					</nav>
-				</div>
-			</div>
 			<div class="card">
-				<div class="card-header">
-					<h4 class="card-title">Color schemes</h4>
-				</div>
-				<div class="card-block">
-					<nav class="navbar navbar-dark bg-inverse">
-						<a class="navbar-brand" href="#">Navbar</a>
-						<ul class="nav navbar-nav">
-						<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-						</li>
-						</ul>
-						<form class="form-inline pull-xs-right">
+				<nav class="navbar navbar-light bg-white navbar-full">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<ul class="nav navbar-nav">
+						<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+					</ul>
+					<form class="form-inline pull-xs-right hidden-md-down">
 						<input class="form-control" type="text" placeholder="Search">
-						<button class="btn btn-white" type="submit">Search</button>
-						</form>
-					</nav>
-					<nav class="navbar navbar-dark bg-primary">
-						<a class="navbar-brand" href="#">Navbar</a>
-						<ul class="nav navbar-nav">
-						<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-						</li>
-						</ul>
-						<form class="form-inline pull-xs-right">
-						<input class="form-control" type="text" placeholder="Search">
-						<button class="btn btn-white" type="submit">Search</button>
-						</form>
-					</nav>
-					<nav class="navbar navbar-light" style="background-color: #e3f2fd; border-bottom:#e3f2fd">
-						<a class="navbar-brand" href="#">Navbar</a>
-						<ul class="nav navbar-nav">
-						<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-						</li>
-						<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-						</li>
-						</ul>
-						<form class="form-inline pull-xs-right">
-						<input class="form-control" type="text" placeholder="Search">
-						<button class="btn btn-primary" type="submit">Search</button>
-						</form>
-					</nav>
+						<button class="btn btn-primary" type="submit">
+							<i class="material-icons">search</i>
+						</button>
+					</form>
+				</nav>
+				<div class="card-block p-t-0">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repudiandae quis possimus harum laboriosam labore rem veniam incidunt molestiae dignissimos, quae maiores ea blanditiis magnam voluptatem voluptas recusandae laudantium illum!
 				</div>
 			</div>
+			
+			<div class="card">
+				<nav class="navbar navbar-dark bg-inverse navbar-full">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<ul class="nav navbar-nav">
+						<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+					</ul>
+					<form class="form-inline pull-xs-right hidden-md-down">
+						<input class="form-control" type="text" placeholder="Search">
+						<button class="btn btn-white" type="submit">
+							<i class="material-icons">search</i>
+						</button>
+					</form>
+				</nav>
+				<div class="card-block p-t-0">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda hic dolorem aliquam labore sunt, harum nihil delectus nisi ducimus quaerat ab. Aspernatur libero ipsum inventore hic fuga! Placeat tenetur, accusantium.
+				</div>
+			</div>
+
+			<div class="card">
+				<nav class="navbar navbar-dark bg-primary navbar-full">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<ul class="nav navbar-nav">
+						<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+					</ul>
+					<form class="form-inline pull-xs-right hidden-md-down">
+						<input class="form-control" type="text" placeholder="Search">
+						<button class="btn btn-white" type="submit">
+							<i class="material-icons">search</i>
+						</button>
+					</form>
+				</nav>
+				<div class="card-block p-t-0">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cumque, corporis, qui velit, pariatur earum aperiam exercitationem accusamus minus atque quae tempora voluptas sint autem eos esse sit quasi. A.
+				</div>
+			</div>
+
 			<div class="page-heading center" id="sidebar-example">
 				<h2>Sidebar</h2>
 				<p class="lead">The sidebar is a custm component for using lefr or right side branding, navigation, and other elements into a concise side block.</p>

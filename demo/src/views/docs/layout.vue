@@ -2,8 +2,14 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-dark bg-primary navbar-full navbar-fixed-top">
 		<div class="container">
+
+			<!-- Brand -->
 			<a class="navbar-brand" v-link="{ name: 'docs.home' }">AdminPlus Lite</a>
-			<button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="true"><span class="material-icons">menu</span></button>
+
+			<!-- Toggle navbar -->
+			<button class="navbar-toggler hidden-md-up pull-xs-right last-child-xs" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="true"><span class="material-icons">menu</span></button>
+
+			<!-- Collapse -->
 	  		<div class="collapse navbar-toggleable-xs" id="navbarMenu">
 				<ul class="nav navbar-nav">
 					<li class="nav-item" v-link-active>
