@@ -11,18 +11,27 @@
 		filters: {
 			replaceLinks (value) {
 				if (value) {
-					return value.replace(/docs\/([a-zA-Z0-9_-]+)\.md/ig, '#!/$1')
+					return value.replace(/docs\/([a-zA-Z0-9_-]+)\.md/ig, '/$1')
 				}
 				return value
 			}
 		},
 		data () {
 			return {
-				content: null
+				content: null,
+				error: null
 			}
 		},
 		route: {
-			canReuse: false
+			canReuse: false,
+			activate () {
+				try {
+					this.init()
+				}
+				catch (e) {
+					this.error = true
+				}
+			}
 		},
 		computed: {
 			page () {
@@ -38,13 +47,23 @@
 			if (this.page) {
 				document.title = `${ this.title } | AdminPlus Lite`
 			}
+			else {
+				document.title = 'AdminPlus Lite'
+			}
 		},
 		ready () {
-			if (this.page) {
-				this.content = require('html!markdown!adminplus/docs/' + this.page + '.md')
+			if (this.error) {
+				this.$router.go({ name: 'docs.home' })
 			}
-			else {
-				this.content = require('html!markdown!adminplus/README.md')
+		},
+		methods: {
+			init () {
+				if (this.page) {
+					this.content = require('html!markdown!adminplus/docs/' + this.page + '.md')
+				}
+				else {
+					this.content = require('html!markdown!adminplus/README.md')
+				}
 			}
 		}
 	}

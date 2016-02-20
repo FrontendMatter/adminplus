@@ -4,7 +4,8 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 var router = new VueRouter({
-	linkActiveClass: 'active'
+	linkActiveClass: 'active',
+	history: true
 })
 
 router.map({

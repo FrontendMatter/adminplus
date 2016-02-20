@@ -2,13 +2,11 @@
 
 	<!-- Navbar -->
 	<nav class="navbar navbar-light bg-white navbar-full navbar-fixed-top left-md-sidebar">
-		<button class="navbar-toggler pull-xs-left hidden-md-up" type="button" data-toggle="sidebar" data-target="#sidebar">
-			<span class="material-icons">menu</span>
-		</button>
-		<a href="index.html" class="navbar-brand">Components</a>
+		<button class="navbar-toggler pull-xs-left hidden-md-up" type="button" data-toggle="sidebar" data-target="#sidebar"><span class="material-icons">menu</span></button>
+		<span class="navbar-brand">Components</span>
 		<ul class="nav navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link" href="#/">Docs</a>
+				<a class="nav-link" v-link="{ name: 'docs.home' }">Docs</a>
 			</li>
 		</ul>
 	</nav>
@@ -16,7 +14,7 @@
 
 	<!-- Sidebar -->
 	<div class="sidebar sidebar-left sidebar-dark bg-primary show-desktop" id="sidebar">
-		<a href="#" class="sidebar-brand">AdminPlus Lite</a>
+		<a v-link="{ name: 'docs.home' }" class="sidebar-brand">AdminPlus Lite</a>
 		<div class="sidebar-header">Components</div>
 		<ul class="nav components-nav">
 			<li class="nav-item open">
