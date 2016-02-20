@@ -1,8 +1,38 @@
 // Navbar
 .navbar {
+	height: $navbar-height;
+	line-height: $navbar-height;
+	padding-top: 0;
+	padding-bottom: 0;
 	margin-bottom: $grid-gutter-width;
 	border-bottom: 1px solid rgba(0,0,0, .1);
-	height: $navbar-height;
-	padding: 0;
-	line-height: $navbar-height;
+	> *:first-child {
+		margin-left: $grid-gutter-width;
+		&.container, &.container-fluid {
+			margin-left:0;
+		}
+	}
+
+	// BREAKPOINTS
+	@each $breakpoint in map-keys($grid-breakpoints) {
+		// specific
+		@include media-breakpoint-up($breakpoint) {
+			> .first-child-#{$breakpoint} {
+				margin-left: $grid-gutter-width;
+				&.container, &.container-fluid {
+					margin-left:0;
+				}		
+			}
+			.last-child-#{$breakpoint} {
+				margin-right:0;
+			}
+		}
+	}
+
+	.container, .container-fluid {
+		> *:last-child {
+			margin-right:0;
+		}
+	}
 }
+

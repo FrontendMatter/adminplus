@@ -38,7 +38,7 @@
 				color: $sidebar-dark-link-color; 
 			}
 		}
-		&.open > .active {
+		&.open .active {
 			background: rgba(255,255,255, .12);
 			a, 
 			a i { 
@@ -52,7 +52,7 @@
 			&:hover { background: rgba(255,255,255, .12); }
 		}
 		@include media-breakpoint-up(md) {
-			&.active a, > .active a { background: transparent; }
+			&.active a, .active a { background: transparent; }
 		}
 	}
 }

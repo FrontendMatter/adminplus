@@ -1,14 +1,10 @@
 .navbar-brand {
 	padding-top: 0;
 	padding-bottom: 0;
-	margin-left: 1rem;
 	font-size: 1.6rem;
 	font-weight: 500;
 	@include media-breakpoint-down(sm) {
 		padding-left: 0;
 		margin-left: 0;
 	}
-}
-.navbar .container > .navbar-brand {
-	margin-left: 0;
 }
