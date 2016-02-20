@@ -31,8 +31,6 @@
 	<!-- // END Navbar -->
 
 	<div class="container-fluid main-container">
-		<div class="content-wrapper p-t-1">
-			<router-view></router-view>
-		</div>
+		<router-view></router-view>
 	</div>
 </template>
