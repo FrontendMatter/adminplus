@@ -32,17 +32,17 @@
 
 		&.active, 
 		> .active {
-			background: rgba(255,255,255, .12);
+			background: $sidebar-dark-link-active-bg;
 			a, 
 			a i { 
-				color: $sidebar-dark-link-color; 
+				color: $sidebar-dark-link-active-color; 
 			}
 		}
 		&.open .active {
-			background: rgba(255,255,255, .12);
+			background: $sidebar-dark-link-active-bg;
 			a, 
 			a i { 
-				color: $sidebar-dark-link-color; 
+				color: $sidebar-dark-link-active-color;
 			}
 		}
 		a {

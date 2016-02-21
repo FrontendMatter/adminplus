@@ -38,8 +38,6 @@ $state-info-bg:                 lighten($brand-info, 54%) !default;
 $state-warning-bg:              lighten($brand-warning, 43%) !default;
 $state-danger-bg:               lighten($brand-danger, 40%) !default;
 
-$sidebar-width:                 250px !default;
-
 $progress-bar-bg:               $brand-primary !default;
 
 $list-group-border-color:       $card-border-color !default;
@@ -58,8 +56,39 @@ $dropdown-border-color:         $border-color !default;
 
 $pagination-disabled-bg:        #efefef !default;
 
+// SIDEBAR
+$sidebar-width:                 250px !default;
+$sidebar-font-size:             15px !default;
+$sidebar-padding:               1.25rem !default;
+
 $sidebar-light-link-color:      $brand-primary !default;
+
 $sidebar-dark-link-color:       #fff !default;
+$sidebar-dark-link-active-color: $sidebar-dark-link-color !default;
+$sidebar-dark-link-active-bg:   rgba(255,255,255, .12) !default;
+
+$sidebar-brand-size:            1.3rem !default;
+$sidebar-brand-weight:          500 !default;
+
+$sidebar-heading-size:          .9rem !default; 
+$sidebar-heading-padding:       $sidebar-padding !default;
+$sidebar-heading-weight:        500 !default;
+$sidebar-heading-line-height:   normal !default;
+$sidebar-link-height:           42px !default;
+
+$sidebar-link-icon-size:        24px !default;
+$sidebar-link-icon-width:       1.5rem !default;
+$sidebar-link-icon-margin-r:    1rem !default;
+
+$sidebar-link-label-margin-t:   13px !default;
+
+$sidebar-link-caret-size:       16px !default;
+$sidebar-link-caret:            '\e5db' !default;
+$sidebar-link-caret-open:       '\e5d8' !default;
+$sidebar-link-caret-spacing:    45px !default;
+$sidebar-link-caret-margin-r:   1.25rem !default;
+
+// END SIDEBAR
 
 $state-success-text:            darken($brand-success, 13%) !default;
 $state-success-bg:              lighten($brand-success, 48%) !default;

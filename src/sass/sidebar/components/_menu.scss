@@ -1,15 +1,22 @@
 // SIDEBAR MENU 
 .sidebar .nav {
   .nav-item a {
-    padding: 0 1.25rem;
-    line-height: 42px;
+    padding: 0 $sidebar-padding;
+    line-height: $sidebar-link-height;
     display: block;
     i {
-      width: 2.5rem;
+      font-size: $sidebar-link-icon-size;
+      width: $sidebar-link-icon-width;
+      margin-right: $sidebar-link-icon-margin-r;
+      text-align: center;
+      &.material-icons {
+        position: relative;
+        top: -1px;
+      }
     }
     .label {
       float:right; 
-      margin-top: 13px;
+      margin-top: $sidebar-link-label-margin-t;
     }
     &:hover { text-decoration: none }
   }
@@ -30,17 +37,17 @@
 // SIDEBAR MENU ITEM CARET
 .sidebar .nav-item {
   &.open a:not(:only-child):before {
-    content: '\e5d8';
+    content: $sidebar-link-caret-open;
   }
   a:not(:only-child) {
-    padding-right: 45px !important; 
+    padding-right: $sidebar-link-caret-spacing !important; 
   }
   a:not(:only-child):before {
     font-family: 'Material Icons';
-    font-size: 16px;
-    content: '\e5db';
+    font-size: $sidebar-link-caret-size;
+    content: $sidebar-link-caret;
     position: absolute;
-    right: 1.25rem;
+    right: $sidebar-link-caret-margin-r;
     margin-top: 2px;
   }
 }

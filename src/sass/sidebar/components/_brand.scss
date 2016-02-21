@@ -4,9 +4,9 @@
   width: 100%;
   height: $navbar-height;
   line-height: $navbar-height;
-  padding: 0 1.25rem;
-  font-weight: 500;
-  font-size: 1.3rem;
+  padding: 0 $sidebar-padding;
+  font-weight: $sidebar-brand-weight;
+  font-size: $sidebar-brand-size;
   &:hover { 
     cursor: pointer;
     text-decoration: none;
