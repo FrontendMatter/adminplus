@@ -19,6 +19,7 @@
 						<a class="nav-link dropdown-toggle" data-toggle="dropdown">Usage</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'basic-usage' } }">Basic Usage</a></li>
+							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'gulp-simple-workflow' } }">Simple Gulp Workflow</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">

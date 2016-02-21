@@ -6,6 +6,9 @@
 	blockquote {
 		color: #888;
 	}
+	h1 {
+		margin-bottom: $grid-gutter-width;
+	}
 	h2 {
 		margin-top: 30px;
 	}
@@ -20,6 +23,12 @@
 	.card-block {
 		position: relative;
 		overflow: hidden;
+	}
+	hr {
+		margin: $grid-gutter-width * 1.5 0;
+	}
+	hr + * {
+		margin-top: 0;
 	}
 }
 @media (min-width: 768px) {

@@ -1,4 +1,4 @@
-# AdminPlus - Bootstrap 4 Admin Template
+# AdminPlus Lite Bootstrap Theme
 
 [![npm version](https://badge.fury.io/js/adminplus.svg)](https://badge.fury.io/js/adminplus)
 
@@ -19,12 +19,11 @@ See [AdminPlus Lite Demo](http://adminplus.themekit.io/demo) and [AdminPlus Prem
 > It’s also published with npm to provide an easy way of loading and updating AdminPlus Lite in any project.
 
 ## Getting started
-
-Get started with the most [basic usage example](docs/basic-usage.md).
-
 ### App Boilerplates
+> More coming soon!
 
-> Coming soon!
+- Get started with the most [basic usage example](docs/basic-usage.md)
+- [Simple Gulp Workflow](docs/gulp-simple-workflow.md)
 
 AdminPlus provides a variety of starter boilerplates for commonly used workflows and tooling such as gulp, browserify and webpack. 
 
