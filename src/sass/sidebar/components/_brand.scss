@@ -4,11 +4,14 @@
   width: 100%;
   height: $navbar-height;
   line-height: $navbar-height;
-  padding: 0 $sidebar-padding;
+  padding: $sidebar-brand-padding;
   font-weight: $sidebar-brand-weight;
   font-size: $sidebar-brand-size;
   &:hover { 
-    cursor: pointer;
+    cursor: pointer;  
     text-decoration: none;
+  }
+  i.material-icons {
+    margin-top: -3px;
   }
 }

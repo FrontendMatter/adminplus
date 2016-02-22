@@ -123,13 +123,13 @@ $sidebar-dark-caret-open-color: #ffffff !default;
 
 // SIDEBAR LIGHT
 $sidebar-light-color:							rgba(0,0,0, .54) !default;
-$sidebar-light-bg:								#ffffff;
-$sidebar-light-p-color:							$sidebar-light-color;
+$sidebar-light-bg:								#ffffff !default;
+$sidebar-light-p-color:							$sidebar-light-color !default;
 
-$sidebar-light-border:							1px solid $border-color;
+$sidebar-light-border:							1px solid $border-color !default;
 
-$sidebar-light-brand-bg:						transparent;
-$sidebar-light-brand-color:						$brand-primary;
+$sidebar-light-brand-bg:						transparent !default;
+$sidebar-light-brand-color:						$brand-primary !default;
 $sidebar-light-brand-border-b: 					1px solid $border-color !default;
 
 $sidebar-light-header-color:					$sidebar-light-color !default;
