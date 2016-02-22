@@ -7,7 +7,7 @@
   bottom: 0;
   overflow: auto;
   width: $sidebar-width;
-  font-size: 15px;
+  font-size: $sidebar-font-size;
   @include media-breakpoint-up(md) {
     &.top-md-navbar { top: 56px; }
     .nav { top: 70px; }
