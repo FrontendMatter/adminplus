@@ -33,6 +33,7 @@
 
 				// ICON
 				i { color: $sidebar-light-link-icon-color; }
+				&:hover i { color: $sidebar-light-link-hover-icon-color; }
 
 				// LABEL
 				.label {
@@ -40,7 +41,7 @@
 					color: $sidebar-light-label-color;
 				}
 			}
-
+			
 			// OPEN
 			&.open {
 				background: $sidebar-light-open-bg;
@@ -53,7 +54,12 @@
 						background: $sidebar-light-open-link-hover-bg; 
 					}
 				}
-				> a:hover { background: none; }
+
+				// DIRECT LINK
+				> a {
+					color: $sidebar-light-open-direct-link-color; 
+					&:hover { background: none; }
+				}
 			}
 			
 			// ACTIVE 
