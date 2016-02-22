@@ -1,7 +1,14 @@
 # Simple Gulp workflow using the AdminPlus Bootstrap Theme
 For this example, we are using Gulp as the primary build tool and we get to see how to work with the Sass source files provided with AdminPlus Lite.
 
+### Code and demo
 > If you'd rather see the complete code for this guide, clone the [adminplus-boilerplate-gulp](https://github.com/themekit/adminplus-boilerplate-gulp) Github repository. You can also [see a working live demo](http://gulp.adminplus-boilerplate.themekit.io) of the project we're builing in this guide.
+
+### Features
+- simple gulp workflow
+- compile Sass using gulp-sass (node-sass)
+- import Sass files directly from node_modules using [sass-importer-npm](https://github.com/themekit/sass-importer-npm)
+- customizing the colors example
 
 ---
 
@@ -46,7 +53,7 @@ npm install -g gulp
 
 ```bash
 npm install --save \
-    adminplus@1.0.0-alpha.3 \
+    adminplus \
     bootstrap@4.0.0-alpha.2 \
     jquery@2 \
     tether
@@ -136,7 +143,7 @@ AdminPlus.Sidebar.init();
 ---
 
 ## HTML
-> Finally, to complete our simple project, let's create some HTML pages. One page will be using a fixed width layout and another with a sidebar layout!
+> Finally, to complete our simple project, let's create some HTML pages!
 
 ### dist/index.html
 > Fixed layout:
