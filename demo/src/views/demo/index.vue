@@ -7,7 +7,7 @@
 		<button class="navbar-toggler pull-xs-left hidden-md-up" type="button" data-toggle="sidebar" data-target="#sidebar"><span class="material-icons">menu</span></button>
 
 		<!-- Brand -->
-		<span class="navbar-brand first-child-md">Components</span>
+		<span class="navbar-brand first-child-md">Demo</span>
 
 		<!-- Menu -->
 		<ul class="nav navbar-nav">
@@ -15,6 +15,9 @@
 				<a class="nav-link" v-link="{ name: 'docs.home' }">Docs</a>
 			</li>
 		</ul>
+
+		<!-- Github Star Button -->
+		<iframe class="btn-github" src="https://ghbtns.com/github-btn.html?user=themekit&repo=adminplus&type=star&count=true&size=small" frameborder="0" scrolling="0" width="100px" height="30px"></iframe>
 	</nav>
 	<!-- // END Navbar -->
 
