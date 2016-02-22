@@ -1,58 +1,73 @@
 .sidebar-dark {
-	color: rgba(255, 255, 255, 0.54) !important; 
-	> p {
-		color: #ffffff;
-	}
-	.sidebar-brand {
-		background: rgba(0, 0, 0, .12); 
-		color: #fff;
-		border-bottom:1px solid rgba(0,0,0, 0.05);
-	}
-	.nav {
-		border-bottom: 1px solid rgba(0,0,0, 0.05);
-		.nav-item a:not(:only-child):before {
-			color: rgba(255, 255, 255, .54);
-		}
-		.nav-item.open a:not(:only-child):before {
-			color: $sidebar-dark-link-color;
-		}
-		.nav-item.nav-heading { color: rgba(255,255,255, .24); }
-		a .label {
-			background: rgba(0,0,0, .3);
-			color: #fff;
-		}
-	}
-	.nav-item {
-		&.open {
-			background: rgba(0,0,0,.04);
-			a { color: rgba(255, 255, 255, .54); }
-			> a:hover { background: none; }
-			border-top:1px solid rgba(0,0,0, 0.05);
-		}
+	color: $sidebar-dark-color;
+	background: $sidebar-dark-bg;
 
-		&.active, 
-		> .active {
-			background: $sidebar-dark-link-active-bg;
-			a, 
-			a i { 
-				color: $sidebar-dark-link-active-color; 
+	p { color: $sidebar-dark-p-color; }
+
+	// BRAND
+	.sidebar-brand {
+		background: $sidebar-dark-brand-bg;
+		color:  $sidebar-dark-brand-color;
+		border-bottom: $sidebar-dark-brand-border-b;
+	}
+	
+	// HEADER
+	.sidebar-header { color:$sidebar-dark-header-color; }
+
+	// MENU
+	.nav {
+		border-bottom: $sidebar-dark-nav-border-b;
+		// MENU ITEM
+		.nav-item {
+			// MENU ITEM STYLING
+			a {
+				color: $sidebar-dark-link-color;
+				
+				// ICON
+				i { color: $sidebar-dark-link-icon-color; }
+				
+				// LABEL
+				.label {
+					background: $sidebar-dark-label-bg;
+					color: $sidebar-dark-label-color;
+				}
+				&.disabled { color: $sidebar-dark-link-disabled-color;}
+				&:hover { background: $sidebar-dark-link-hover-bg; }
 			}
-		}
-		&.open .active {
-			background: $sidebar-dark-link-active-bg;
-			a, 
-			a i { 
-				color: $sidebar-dark-link-active-color;
+
+			// OPEN
+			&.open {
+				background: $sidebar-dark-open-bg;
+				border-top: 1px solid rgba(0,0,0, 0.05);
+				
+				a { 
+					color: $sidebar-dark-open-link-color; 
+					&:hover { background: $sidebar-dark-open-link-hover-bg; }
+				}
+				> a:hover { background: none; }
 			}
-		}
-		a {
-			color: #ffffff;
-			i { color: rgba(255, 255, 255, .54); }
-			&.disabled { color: rgba(255,255,255, .24); }
-			&:hover { background: rgba(255,255,255, .12); }
-		}
-		@include media-breakpoint-up(md) {
-			&.active a, .active a { background: transparent; }
+			
+			// ACTIVE 
+			&.active, 
+			> .active {
+				background: $sidebar-dark-link-active-bg;
+				a, 
+				a i { 
+					color: $sidebar-dark-link-active-color; 
+				}
+			}
+			&.open .active {
+				background: $sidebar-dark-link-open-active-bg;
+				a, 
+				a i { 
+					color: $sidebar-dark-open-link-active-color;
+				}
+			}
+			
+			// CARET COLOR
+			a:not(:only-child):before { color: $sidebar-dark-caret-color; }
+			// CARET COLOR OPEN
+			&.open a:not(:only-child):before { color: $sidebar-dark-caret-open-color; }
 		}
 	}
 }

@@ -14,12 +14,17 @@ $font-family-base:              Roboto, 'Helvetica Neue', Arial, Helvetica, sans
 $grid-gutter-width:             1.25rem !default;
 $headings-font-weight:          400 !default;
 
+$border-color:                  #e5e5e5 !default;
+$dropdown-border-color:         $border-color !default;
+
 $brand-primary:                 $light-blue-600 !default;
 $brand-secondary:               darken($brand-primary,18%) !default;
 $brand-warning:                 #FF9800 !default;
 $brand-info:                    #00BCD4 !default;
 $brand-success:                 $green-600 !default;
 $brand-danger:                  $red-600 !default;
+
+$btn-border-radius:             0 !default;
 
 $btn-secondary-color:           #fff !default;
 $btn-secondary-bg:              $brand-secondary !default;
@@ -42,17 +47,13 @@ $progress-bar-bg:               $brand-primary !default;
 
 $list-group-border-color:       $card-border-color !default;
 $list-group-border-radius:      0 !default;
-$btn-border-radius:             0 !default;
 
 $navbar-height:                 56px;
 $navbar-line-height:            56px;
 $navbar-padding-vertical:       0 !default;
 $navbar-padding-horizontal:     0 !default;
 
-$border-color:                  #e5e5e5 !default;
-
 $progress-bar-success-bg:       $brand-success !default;
-$dropdown-border-color:         $border-color !default;
 
 $pagination-disabled-bg:        #efefef !default;
 
@@ -61,25 +62,19 @@ $sidebar-width:                 250px !default;
 $sidebar-font-size:             15px !default;
 $sidebar-padding:               1.25rem !default;
 
-$sidebar-light-link-color:      $brand-primary !default;
-
-$sidebar-dark-link-color:       #fff !default;
-$sidebar-dark-link-active-color: $sidebar-dark-link-color !default;
-$sidebar-dark-link-active-bg:   rgba(255,255,255, .12) !default;
-
 $sidebar-brand-size:            1.3rem !default;
 $sidebar-brand-weight:          500 !default;
+$sidebar-brand-padding:			0 $sidebar-padding;
 
 $sidebar-heading-size:          .9rem !default; 
 $sidebar-heading-padding:       $sidebar-padding !default;
 $sidebar-heading-weight:        500 !default;
 $sidebar-heading-line-height:   normal !default;
-$sidebar-link-height:           42px !default;
 
+$sidebar-link-height:           42px !default;
 $sidebar-link-icon-size:        24px !default;
 $sidebar-link-icon-width:       1.5rem !default;
 $sidebar-link-icon-margin-r:    1rem !default;
-
 $sidebar-link-label-margin-t:   13px !default;
 
 $sidebar-link-caret-size:       16px !default;
@@ -87,6 +82,79 @@ $sidebar-link-caret:            '\e5db' !default;
 $sidebar-link-caret-open:       '\e5d8' !default;
 $sidebar-link-caret-spacing:    45px !default;
 $sidebar-link-caret-margin-r:   1.25rem !default;
+
+// SIDEBAR DARK
+$sidebar-dark-color:			rgba(255, 255, 255, 0.54) !important !default;
+$sidebar-dark-bg:				transparent !default;	
+$sidebar-dark-p-color:			#ffffff !default;
+
+$sidebar-dark-brand-bg:			rgba(0, 0, 0, .12) !default;
+$sidebar-dark-brand-color:		#ffffff !default;
+$sidebar-dark-brand-border-b:	1px solid rgba(0,0,0, 0.05) !default;
+
+$sidebar-dark-header-color:		$sidebar-dark-color !default;
+
+$sidebar-dark-link-color:       #fff !default;
+$sidebar-dark-link-active-color: $sidebar-dark-link-color !default;
+$sidebar-dark-link-hover-color: $sidebar-dark-link-color !default;
+$sidebar-dark-link-hover-bg:	rgba(255,255,255, .12) !default;
+$sidebar-dark-link-active-bg:   rgba(255,255,255, .12) !default;
+$sidebar-dark-link-open-active-bg: $sidebar-dark-link-active-bg !default;
+
+$sidebar-dark-link-icon-color:	rgba(255, 255, 255, .54) !default;
+$sidebar-dark-link-disabled-color:	rgba(255,255,255, .24); 
+
+$sidebar-dark-nav-border-b:		1px solid rgba(0,0,0, 0.05) !default;
+
+$sidebar-dark-open-bg:			rgba(0,0,0,.04) !default;
+$sidebar-dark-open-link-color:	rgba(255, 255, 255, .54) !default; 
+$sidebar-dark-open-link-hover-bg: $sidebar-dark-link-hover-bg !default;
+$sidebar-dark-open-link-active-color: $sidebar-dark-link-color !default;
+
+$sidebar-dark-label-bg:			rgba(0,0,0, .3) !default;
+$sidebar-dark-label-color:		#ffffff !default;
+$sidebar-dark-caret-color:		rgba(255, 255, 255, .54) !default;
+$sidebar-dark-caret-open-color: #ffffff !default;
+
+// SIDEBAR LIGHT
+$sidebar-light-color:			rgba(0,0,0, .54) !default;
+$sidebar-light-bg:				#ffffff;
+$sidebar-light-p-color:			$sidebar-light-color;
+
+$sidebar-light-border:			1px solid $border-color;
+
+$sidebar-light-brand-bg:		transparent;
+$sidebar-light-brand-color:		$brand-primary;
+$sidebar-light-brand-border-b: 	1px solid $border-color !default;
+
+$sidebar-light-header-color:	$sidebar-light-color !default;
+
+$sidebar-light-link-color:		rgba(0,0,0, .54) !default;
+$sidebar-light-link-active-color: $brand-primary !default;
+
+$sidebar-light-link-hover-color: #212121 !default;
+
+$sidebar-light-link-hover-bg:	rgba(0,0,0, .03) !default;
+$sidebar-light-link-active-bg:	rgba(0,0,0, .03) !default;
+$sidebar-light-link-open-active-bg: $sidebar-light-link-active-bg !default;
+
+$sidebar-light-link-icon-color: $sidebar-light-link-color !default;
+$sidebar-light-link-disabled-color: rgba(0,0,0, .24) !default;
+
+$sidebar-light-nav-border-b: 	1px solid rgba(0,0,0, 0.05) !default;
+
+$sidebar-light-open-bg:			rgba(0,0,0,.04) !default;
+$sidebar-light-open-link-color:	$sidebar-light-link-color !default;
+$sidebar-light-open-link-hover-bg: $sidebar-light-link-hover-bg !default;
+$sidebar-light-open-link-active-color: $sidebar-light-link-active-color !default;
+$sidebar-light-open-link-hover-color: $sidebar-light-link-hover-color !default;
+
+
+$sidebar-light-label-bg:			rgba(0,0,0, .3) !default;
+$sidebar-light-label-color:		#ffffff !default;
+
+$sidebar-light-caret-color: 	rgba(0,0,0, .24) !default;
+$sidebar-light-caret-open-color: $sidebar-light-link-color !default;
 
 // END SIDEBAR
 
