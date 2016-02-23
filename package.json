@@ -1,6 +1,6 @@
 {
   "name": "adminplus",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "AdminPlus Lite - Bootstrap 4 Admin Template",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
