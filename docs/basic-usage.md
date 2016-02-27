@@ -7,7 +7,7 @@ The most simple npm setup and minimal boilerplate to get started with AdminPlus 
 ### Features
 - simple npm setup
 - no build tools
-- static layout examples
+- static HTML layout examples
 
 ---
 
@@ -16,9 +16,9 @@ The most simple npm setup and minimal boilerplate to get started with AdminPlus 
 
 ```
 ├── index.html
-├── node_modules
-├── package.json
 ├── sidebar.html
+├── package.json
+├── node_modules
 └── vendor
     ├── adminplus.css
     ├── adminplus.js
@@ -136,7 +136,7 @@ npm run copy-vendor
     <div class="card">
       <div class="card-block">
         This is a demo for the <a target="_blank" href="https://github.com/themekit/adminplus-boilerplate-npm">adminplus-boilerplate-npm</a> repository. <br>
-        Read the full guide <a target="_blank" href="http://adminplus.themekit.io/basic-usage">AdminPlus Lite: Basic Usage (npm)</a>.
+        Read the full guide <a target="_blank" href="http://adminplus.themekit.io/basic-usage">Simple npm workflow</a>.
       </div>
     </div>
 
@@ -239,7 +239,7 @@ npm run copy-vendor
       <div class="card">
         <div class="card-block">
           This is a demo for the <a target="_blank" href="https://github.com/themekit/adminplus-boilerplate-npm">adminplus-boilerplate-npm</a> repository. <br>
-          Read the full guide <a target="_blank" href="http://adminplus.themekit.io/basic-usage">AdminPlus Lite: Basic Usage (npm)</a>.
+          Read the full guide <a target="_blank" href="http://adminplus.themekit.io/basic-usage">Simple npm workflow</a>.
         </div>
       </div>
 
