@@ -31,7 +31,7 @@
 			</div>
 			
 			<!-- Github Star Button -->
-			<iframe class="btn-github" src="https://ghbtns.com/github-btn.html?user=themekit&repo=adminplus&type=star&count=true&size=small" frameborder="0" scrolling="0" width="90px" height="30px"></iframe>
+			<iframe class="btn-github" src="https://ghbtns.com/github-btn.html?user=themekit&repo=adminplus-bootstrap-theme&type=star&count=true&size=small" frameborder="0" scrolling="0" width="90px" height="30px"></iframe>
 		</div>
 	</nav>
 	<!-- // END Navbar -->
