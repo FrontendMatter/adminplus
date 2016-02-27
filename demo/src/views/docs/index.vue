@@ -11,7 +11,9 @@
 		filters: {
 			replaceLinks (value) {
 				if (value) {
-					return value.replace(/docs\/([a-zA-Z0-9_-]+)\.md/ig, '/$1')
+					return value
+						.replace(/([a-zA-Z0-9_-]+)\.md/ig, '/$1')
+						.replace(/home/ig, '')
 				}
 				return value
 			}
@@ -35,7 +37,7 @@
 		},
 		computed: {
 			page () {
-				return this.$route.params.page
+				return this.$route.params.page || 'home'
 			},
 			title () {
 				if (this.page) {
@@ -58,12 +60,7 @@
 		},
 		methods: {
 			init () {
-				if (this.page) {
-					this.content = require('html!markdown!adminplus/docs/' + this.page + '.md')
-				}
-				else {
-					this.content = require('html!markdown!adminplus/README.md')
-				}
+				this.content = require('html!markdown!adminplus/docs/' + this.page + '.md')
 			}
 		}
 	}

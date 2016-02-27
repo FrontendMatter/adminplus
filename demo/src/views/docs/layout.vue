@@ -13,13 +13,15 @@
 	  		<div class="collapse navbar-toggleable-xs" id="navbarMenu">
 				<ul class="nav navbar-nav">
 					<li class="nav-item" v-link-active>
-						<a class="nav-link" v-link="{ name: 'docs.home' }">Introduction</a>
+						<a class="nav-link" v-link="{ path: '/' }">Introduction</a>
 					</li>
-					<li class="nav-item dropdown" v-link-active>
+					<li class="nav-item dropdown" :class="{ 'active': $route.name === 'docs.page' }">
 						<a class="nav-link dropdown-toggle" data-toggle="dropdown">Usage</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'basic-usage' } }">Basic usage (npm)</a></li>
 							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'gulp-simple-workflow' } }">Simple gulp workflow</a></li>
+							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'gulp-advanced-workflow' } }">Advanced gulp workflow</a></li>
+							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'local-development' } }">Local development</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -29,7 +31,7 @@
 			</div>
 			
 			<!-- Github Star Button -->
-			<iframe class="btn-github" src="https://ghbtns.com/github-btn.html?user=themekit&repo=adminplus&type=star&count=true&size=small" frameborder="0" scrolling="0" width="100px" height="30px"></iframe>
+			<iframe class="btn-github" src="https://ghbtns.com/github-btn.html?user=themekit&repo=adminplus&type=star&count=true&size=small" frameborder="0" scrolling="0" width="90px" height="30px"></iframe>
 		</div>
 	</nav>
 	<!-- // END Navbar -->
