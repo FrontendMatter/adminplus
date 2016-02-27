@@ -1,6 +1,6 @@
 # Local development
 
-This guide refers to local development with the AdminPlus Lite library, which is common if you're looking to contribute or customize the source. If you're looking for instructions on how to use AdminPlus Lite in your project, see [Getting started](docs/home.md#getting-started).
+This guide refers to local development with the AdminPlus Lite library, which is common if you're looking to contribute or customize the source. If you're looking for instructions on how to use AdminPlus Lite in your project, see [Getting started](home.md#getting-started).
 
 ---
 
