@@ -1,14 +1,17 @@
-# Simple Gulp workflow using the AdminPlus Bootstrap Theme
+# Simple Gulp workflow using the AdminPlus Lite Bootstrap Theme
 For this example, we are using Gulp as the primary build tool and we get to see how to work with the Sass source files provided with AdminPlus Lite.
 
 ### Code and demo
 > If you'd rather see the complete code for this guide, clone the [adminplus-boilerplate-gulp](https://github.com/themekit/adminplus-boilerplate-gulp) Github repository. You can also [see a working live demo](http://gulp.adminplus-boilerplate.themekit.io) of the project we're builing in this guide.
 
 ### Features
-- simple gulp workflow
-- compile Sass using gulp-sass (node-sass)
+- simple [gulp](https://github.com/gulpjs/gulp) workflow
+- compile Sass using [gulp-sass](https://github.com/dlmanning/gulp-sass) (gulp wrapper for [node-sass](https://github.com/sass/node-sass))
 - import Sass files directly from node_modules using [sass-importer-npm](https://github.com/themekit/sass-importer-npm)
-- customizing the colors example
+- example of customizing AdminPlus Lite colors
+
+### Advanced boilerplate
+Fore more advanced features such as file watchers, minify, browser vendor prefixes, browserify and more, see our [Advanced gulp workflow](docs/gulp-advanced-workflow.md).
 
 ---
 
@@ -17,20 +20,20 @@ For this example, we are using Gulp as the primary build tool and we get to see 
 
 ```
 ├── dist
+│   ├── index.html
+│   ├── sidebar.html
 │   ├── css
 │   │   └── app.css
-│   ├── index.html
 │   ├── js
 │   │   └── app.js
-│   ├── sidebar.html
 │   └── vendor
 │       ├── adminplus.js
 │       ├── bootstrap.min.js
 │       ├── jquery.min.js
 │       └── tether.min.js
 ├── gulpfile.js
-├── node_modules
 ├── package.json
+├── node_modules
 └── src
     └── sass
         ├── _variables.scss
@@ -45,8 +48,8 @@ For this example, we are using Gulp as the primary build tool and we get to see 
 npm install -g gulp
 ```
 
-### package.json
-> Assuming you're working from a new project (empty) directory, you'll need to create a package.json file in order to save the npm dependencies which we'll install next. If you don't want to use a package.json file, just ignore `--save` and `--save-dev` from any of the following `npm` commands. To create a package.json file, run `npm init`.
+## package.json
+> Create a package.json file in order to save the project dependencies. Run `npm init` from your project directory.
 
 ## Project dependencies
 > Install adminplus and it's dependencies (note jQuery and Tether are required by Bootstrap 4):
@@ -208,7 +211,7 @@ AdminPlus.Sidebar.init();
     <div class="card">
       <div class="card-block">
         This is a demo for the <a target="_blank" href="https://github.com/themekit/adminplus-boilerplate-gulp">adminplus-boilerplate-gulp</a> repository. <br>
-        Read the full guide <a target="_blank" href="http://adminplus.themekit.io/gulp-simple-workflow">Simple Gulp Workflow using AdminPlus</a>.
+        Read the full guide <a target="_blank" href="http://adminplus.themekit.io/gulp-simple-workflow">Simple gulp workflow</a>.
       </div>
     </div>
 
@@ -311,7 +314,7 @@ AdminPlus.Sidebar.init();
       <div class="card">
         <div class="card-block">
           This is a demo for the <a target="_blank" href="https://github.com/themekit/adminplus-boilerplate-gulp">adminplus-boilerplate-gulp</a> repository. <br>
-          Read the full guide <a target="_blank" href="http://adminplus.themekit.io/gulp-simple-workflow">Simple Gulp Workflow using AdminPlus</a>.
+          Read the full guide <a target="_blank" href="http://adminplus.themekit.io/gulp-simple-workflow">Simple gulp workflow</a>.
         </div>
       </div>
 
