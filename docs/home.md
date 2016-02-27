@@ -13,8 +13,19 @@ See [AdminPlus Lite Demo](http://adminplus.themekit.io/demo) and [AdminPlus Prem
 ## Getting started
 AdminPlus provides a variety of guides and starter boilerplates for commonly used workflows and tooling such as npm, gulp, browserify and webpack. 
 
-- [Basic usage (npm)](basic-usage.md)
-- [Simple gulp workflow](gulp-simple-workflow.md)
-- [Advanced gulp workflow](gulp-advanced-workflow.md)
+**Basic usage (npm)**<br/>
+[boilerplate code](https://github.com/themekit/adminplus-boilerplate-npm) | 
+[boilerplate demo](http://npm.adminplus-boilerplate.themekit.io/) | 
+[guide](basic-usage.md)
+
+**Simple gulp workflow**<br/>
+[boilerplate code](https://github.com/themekit/adminplus-boilerplate-gulp) | 
+[boilerplate demo](http://gulp.adminplus-boilerplate.themekit.io/) | 
+[guide](gulp-simple-workflow.md)
+
+**Advanced gulp workflow**<br/>
+[boilerplate code](https://github.com/themekit/adminplus-boilerplate-gulp-advanced) | 
+[boilerplate demo](http://gulp-advanced.adminplus-boilerplate.themekit.io/) | 
+[guide](gulp-advanced-workflow.md)
 
 > Integration samples with popular front end libraries such as AngularJS, MeteorJS, Vue.js and server side libraries such as Laravel and Ruby on Rails (coming soon).
