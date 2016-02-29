@@ -2,7 +2,7 @@
 .sidebar {
   position: fixed;
   display: none;
-  z-index: 1032;
+  z-index: $zindex-sidebar;
   top: 0;
   bottom: 0;
   overflow: auto;
