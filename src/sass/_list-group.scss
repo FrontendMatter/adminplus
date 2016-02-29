@@ -1,15 +1,21 @@
 .list-group {
 	margin-bottom: $grid-gutter-width;
 }
-
 .list-group-fit > .list-group-item {
 	border-left: none;
 	border-right: none;
 	&:last-of-type {
 		border-bottom: none;
 	}
+	&:first-of-type {
+		border-top: none;
+	}
 }
-
+.list-group-item.active {
+	a, [class*="text-"] {
+		color: $list-group-active-color;
+	}
+}
 .list-group-sm .list-group-item {
 	padding: .35rem .70rem;
 }
