@@ -137,10 +137,10 @@
 	background: $body-bg;
 	.nav-link {
 		border-radius: 0;
-		color: $gray-light;
+		color: $card-nav-link;
 		&:hover, &.active {
 			border-color: transparent;
-			color: $gray;
+			color:  $card-nav-link-hover;
 		}
 	}
 }

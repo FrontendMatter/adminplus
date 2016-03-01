@@ -52,6 +52,7 @@ $navbar-height:                 56px;
 $navbar-line-height:            56px;
 $navbar-padding-vertical:       0 !default;
 $navbar-padding-horizontal:     0 !default;
+$navbar-box-shadow:				none !default;
 
 $progress-bar-success-bg:       $brand-success !default;
 
@@ -199,6 +200,11 @@ $gray-lightest:                 #f7f7f9 !default;
 $input-border-color:                $gray-lighter !default;
 $input-group-addon-border-color:    $input-border-color !default;
 
+$text-muted:					$gray-light !default;
+$text-muted-light:				lighten($text-muted, 22%) !default;
+
+$card-nav-link:					$gray-light !default;
+$card-nav-link-hover:			$gray !default;
 /////////////////////////////////
 // DEFAULT BOOTSTRAP VARIABLES //
 /////////////////////////////////

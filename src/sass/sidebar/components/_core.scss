@@ -8,6 +8,9 @@
   overflow: auto;
   width: $sidebar-width;
   font-size: $sidebar-font-size;
+  @include media-breakpoint-down(md) { 
+    z-index:  $zindex-navbar-fixed + 1;
+  }
   @include media-breakpoint-up(md) {
     &.top-md-navbar { top: 56px; }
     .nav { top: 70px; }

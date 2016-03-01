@@ -6,7 +6,11 @@
 	padding-bottom: 0;
 	margin-bottom: $grid-gutter-width;
 	border-bottom: 1px solid rgba(0,0,0, .1);
-	
+
+	&.navbar-fixed-top {
+		box-shadow: $navbar-box-shadow;
+	}
+
 	> *:first-child {
 		margin-left: $grid-gutter-width;
 		&.container, 
