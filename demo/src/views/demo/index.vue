@@ -1,13 +1,13 @@
 <template>
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-light bg-white navbar-full navbar-fixed-top left-md-sidebar">
+	<nav class="navbar navbar-light bg-white navbar-full navbar-fixed-top ls-left-sidebar">
 
 		<!-- Toggle Sidebar -->
-		<button class="navbar-toggler pull-xs-left hidden-md-up" type="button" data-toggle="sidebar" data-target="#sidebar"><span class="material-icons">menu</span></button>
+		<button class="navbar-toggler pull-xs-left" type="button" data-toggle="sidebar" data-target="#sidebar"><span class="material-icons">menu</span></button>
 
 		<!-- Brand -->
-		<span class="navbar-brand first-child-md">Demo</span>
+		<span class="navbar-brand">Demo</span>
 
 		<!-- Menu -->
 		<ul class="nav navbar-nav">
@@ -22,49 +22,87 @@
 	<!-- // END Navbar -->
 
 	<!-- Sidebar -->
-	<div class="sidebar sidebar-left sidebar-dark bg-primary show-desktop" id="sidebar">
+	<div class="sidebar sidebar-dark bg-primary" id="sidebar">
 
 		<!-- Brand -->
 		<a v-link="{ name: 'docs.home' }" class="sidebar-brand">AdminPlus Lite</a>
 
 		<!-- Components -->
-		<div class="sidebar-header">Components</div>
-		<ul class="nav components-nav">
-			<li class="nav-item open">
-				<a href="#button" class="nav-link">Button</a>
-				<ul>
-					<li><a href="#button">Button style</a></li>
-					<li><a href="#button-group">Button group</a></li>
-					<li><a href="#button-dropdown">Button dropdown</a></li>
+		<div class="sidebar-heading">Components</div>
+		<ul class="nav components-nav sidebar-menu">
+			<li class="nav-item sidebar-menu-item open">
+				<a href="#button" class="nav-link sidebar-menu-button">Button</a>
+				<ul class="sidebar-submenu">
+					<li class="sidebar-menu-item">
+						<a class="sidebar-menu-button" href="#button">Button style</a>
+					</li>
+					<li class="sidebar-menu-item">
+						<a class="sidebar-menu-button" href="#button-group">Button group</a>
+					</li>
+					<li class="sidebar-menu-item">
+						<a class="sidebar-menu-button" href="#button-dropdown">Button dropdown</a>
+					</li>
 				</ul>
 			</li>
-			<li class="nav-item"><a href="#forms" class="nav-link">Forms</a></li>
-			<li class="nav-item"><a href="#input-group" class="nav-link">Input group</a></li>
-			<li class="nav-item"><a href="#dropdown" class="nav-link">Dropdown</a></li>
-			<li class="nav-item"><a href="#jumbotron" class="nav-link">Jumbotron</a></li>
-			<li class="nav-item"><a href="#label" class="nav-link">Label</a></li>
-			<li class="nav-item"><a href="#alert" class="nav-link">Alert</a></li>
-			<li class="nav-item"><a href="#card" class="nav-link">Card</a></li>
-			<li class="nav-item">
-				<a href="#navs" class="nav-link">Navs</a>
-				<ul>
-					<li><a href="#navs">Base</a></li>
-					<li><a href="#tabs">Tabs</a></li>
-					<li><a href="#pills">Pills </a></li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#forms" class="nav-link sidebar-menu-button">Forms</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#input-group" class="nav-link sidebar-menu-button">Input group</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#dropdown" class="nav-link sidebar-menu-button">Dropdown</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#jumbotron" class="nav-link sidebar-menu-button">Jumbotron</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#label" class="nav-link sidebar-menu-button">Label</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#alert" class="nav-link sidebar-menu-button">Alert</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#card" class="nav-link sidebar-menu-button">Card</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#navs" class="nav-link sidebar-menu-button">Navs</a>
+				<ul class="sidebar-submenu">
+					<li class="sidebar-menu-item">
+						<a class="sidebar-menu-button" href="#navs">Base</a>
+					</li>
+					<li class="sidebar-menu-item">
+						<a class="sidebar-menu-button" href="#tabs">Tabs</a>
+					</li>
+					<li class="sidebar-menu-item">
+						<a class="sidebar-menu-button" href="#pills">Pills</a>
+					</li>
 				</ul>
 			</li>
-			<li class="nav-item"><a href="#navbar" class="nav-link">Navbar</a></li>
-			<li class="nav-item"><a href="#sidebar-example" class="nav-link">Sidebar</a></li>
-			<li class="nav-item"><a href="#breadcrumb" class="nav-link">Breadcrumb</a></li>
-			<li class="nav-item"><a href="#pagination" class="nav-link">Pagination</a></li>
-			<li class="nav-item"><a href="#progress" class="nav-link">Progress</a></li>
-			<li class="nav-item"><a href="#list-group" class="nav-link">List Group</a></li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#navbar" class="nav-link sidebar-menu-button">Navbar</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#sidebar-example" class="nav-link sidebar-menu-button">Sidebar</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#breadcrumb" class="nav-link sidebar-menu-button">Breadcrumb</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#pagination" class="nav-link sidebar-menu-button">Pagination</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#progress" class="nav-link sidebar-menu-button">Progress</a>
+			</li>
+			<li class="nav-item sidebar-menu-item">
+				<a href="#list-group" class="nav-link sidebar-menu-button">List Group</a>
+			</li>
 		</ul>
 	</div>
 
 	<!-- Content -->
-	<div class="content-wrapper">
-		<div class="container-fluid m-t-1">
+	<div class="layout-content" data-scrollable>
+		<div class="container-fluid">
 
 			<div class="page-heading center" id="button">
 				<h2>Button</h2>
@@ -767,38 +805,46 @@
 				</div>
 				<div class="card-block">
 					<div class="card">
-						<div class="sidebar sidebar-dark sidebar-left bg-primary sidebar-demo sidebar-left">
-							<a href="index.html" class="sidebar-brand">
-								<span class="icon-text">Sidebar Brand</span>
-							</a>
-							<div class="sidebar-header">Header</div>
-							<ul class="nav">
-								<li class="nav-item">
-									<a class="nav-link" href="index.html"><i class="material-icons">person_outline</i><span class="icon-text">Menu Item</span></a>
+						<div class="sidebar sidebar-dark sidebar-left bg-primary sidebar-static" data-visible="xs-up">
+							<a href="#" class="sidebar-brand">Sidebar Brand</a>
+							<div class="sidebar-heading">Header</div>
+							<ul class="sidebar-menu">
+								<li class="sidebar-menu-item">
+									<a class="sidebar-menu-button" href="index.html">
+										<i class="sidebar-menu-icon material-icons">person_outline</i> Menu Item
+									</a>
 								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link"> 
-										<i class="material-icons">list</i>Submenu</a>
-									<ul>
-										<li><a href="#">Submenu Item</a></li>
-										<li><a href="#">Submenu Item</a></li>
-										<li><a href="#">Submenu Item</a></li>
+								<li class="sidebar-menu-item">
+									<a href="#" class="sidebar-menu-button"> 
+										<i class="sidebar-menu-icon material-icons">list</i> Submenu
+									</a>
+									<ul class="sidebar-submenu">
+										<li class="sidebar-menu-item">
+											<a class="sidebar-menu-button" href="#">Submenu Item</a>
+										</li>
+										<li class="sidebar-menu-item">
+											<a class="sidebar-menu-button" href="#">Submenu Item</a>
+										</li>
+										<li class="sidebar-menu-item">
+											<a class="sidebar-menu-button" href="#">Submenu Item</a>
+										</li>
 									</ul>
 								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link"> 
-									<i class="material-icons">business</i>Menu Item</a>
+								<li class="sidebar-menu-item">
+									<a href="#" class="sidebar-menu-button"> 
+										<i class="sidebar-menu-icon material-icons">business</i> Menu Item
+									</a>
 								</li>
 							</ul>
-							<div class="sidebar-header">Text</div>
+							<div class="sidebar-heading">Text</div>
 							<p>I'm a senior UI designer that enjoys crafting static designs.</p>
-							<div class="sidebar-header">Tags</div>
+							<div class="sidebar-heading">Tags</div>
 							<p>
-								<span class="label label-primary-outline">HTML</span>
-								<span class="label label-primary-outline">CSS</span>
-								<span class="label label-primary-outline">PHOTOSHOP</span>
-								<span class="label label-primary-outline">NODE</span>
-								<span class="label label-primary-outline">HTML</span>
+								<span class="sidebar-label label label-default">HTML</span>
+								<span class="sidebar-label label label-default">CSS</span>
+								<span class="sidebar-label label label-default">PHOTOSHOP</span>
+								<span class="sidebar-label label label-default">NODE</span>
+								<span class="sidebar-label label label-default">HTML</span>
 							</p>
 						</div>
 					</div>
@@ -809,26 +855,38 @@
 					<h4 class="card-title">Sidebar Colors</h4>
 				</div>
 				<div class="card-block">
-						<div class="card">
-							<div class="sidebar sidebar-dark sidebar-left bg-primary sidebar-demo sidebar-left">
-								<div class="sidebar-header">Header</div>
-								<ul class="nav">
-									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
-									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
-									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
-								</ul>
-							</div>
+					<div class="card">
+						<div class="sidebar sidebar-dark bg-primary sidebar-static" data-visible="xs-up">
+							<div class="sidebar-heading">Header</div>
+							<ul class="sidebar-menu">
+								<li class="sidebar-menu-item">
+									<a href="#" class="sidebar-menu-button">Menu Item</a>
+								</li>
+								<li class="sidebar-menu-item">
+									<a href="#" class="sidebar-menu-button">Menu Item</a>
+								</li>
+								<li class="sidebar-menu-item">
+									<a href="#" class="sidebar-menu-button">Menu Item</a>
+								</li>
+							</ul>
 						</div>
-						<div class="card bg-faded">
-							<div class="sidebar sidebar-light sidebar-left bg-white sidebar-demo">
-								<div class="sidebar-header">Header</div>
-								<ul class="nav">
-									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
-									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
-									<li class="nav-item"><a href="#" class="nav-link">Menu Item</a></li>
-								</ul>
-							</div>
-						</div>					
+					</div>
+					<div class="card bg-faded">
+						<div class="sidebar sidebar-light bg-white sidebar-static" data-visible="xs-up">
+							<div class="sidebar-heading">Header</div>
+							<ul class="sidebar-menu">
+								<li class="sidebar-menu-item">
+									<a href="#" class="sidebar-menu-button">Menu Item</a>
+								</li>
+								<li class="sidebar-menu-item">
+									<a href="#" class="sidebar-menu-button">Menu Item</a>
+								</li>
+								<li class="sidebar-menu-item">
+									<a href="#" class="sidebar-menu-button">Menu Item</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 			
@@ -1016,20 +1074,36 @@
 		},
 		ready () {
 			Sidebar.init()
-			$('body').scrollspy({ target: '#sidebar', offset: 74 })
+			Sidebar._each((sidebar) => {
+				Sidebar.show(sidebar, false)
+			})
+
+			$('.layout-content').scrollspy({ target: '#sidebar', offset: 74 })
 			$('.components-nav a').on('click', (e) => {
 				e.preventDefault()
 				const target = $(e.currentTarget).attr('href')
 				if (target && target !== '#') {
 					const targetElement = document.querySelector(target)
-					$('body').animate({
-						scrollTop: targetElement.offsetTop
+					$('.layout-content').animate({
+						scrollTop: targetElement.offsetTop - 74
 					})
 				}
 			})
 		},
 		beforeDestroy () {
 			$('body').off()
+
+			// layout classes
+			Sidebar._each((sidebar) => {
+				Sidebar._layout(sidebar).removeClass(Sidebar._classString(Sidebar._layoutClasses(sidebar)))
+				// sidebar visibility
+				sidebar.removeClass(Sidebar.VISIBLE_CLASS)
+				// sidebar classes
+				sidebar.removeClass(Sidebar._classString(Sidebar._sidebarClasses(sidebar)))
+			})
+
+			// destroy breakpoints
+			Sidebar._breakpoints(true)
 		}
 	}
 </script>

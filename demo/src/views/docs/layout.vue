@@ -36,7 +36,9 @@
 	</nav>
 	<!-- // END Navbar -->
 
-	<div class="container-fluid main-container">
-		<router-view></router-view>
+	<div class="layout-content" data-scrollable>
+		<div class="container-fluid main-container">
+			<router-view></router-view>
+		</div>
 	</div>
 </template>
