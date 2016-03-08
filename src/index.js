@@ -1,12 +1,14 @@
-// COMPONENTS
-import Sidebar from './js/sidebar'
-
 // STYLING
 import './sass/style'
 
+// COMPONENTS
+import { Sidebar } from 'bootstrap-layout'
+import { Scrollable } from 'bootstrap-layout'
+
 // LIBRARY
 const AdminPlus = {
-	Sidebar: new Sidebar()
+	Sidebar,
+	Scrollable
 }
 
 // EXPORT ES6

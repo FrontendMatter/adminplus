@@ -1,0 +1,19 @@
+.sidebar {
+	.card {
+		margin-bottom: $sidebar-spacing-horizontal;
+	}
+	.sidebar-block-full {
+		> .card {
+			border-left: none;
+			border-right: none;
+			margin: 0;
+			border-radius: 0;
+			& + .card {
+				border-top: none;
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+}

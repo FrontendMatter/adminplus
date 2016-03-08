@@ -12,7 +12,15 @@ var config = new WebpackConfig()
 		},
 		sassImportLoader: {
 			base: './src/sass/_variables.scss'
-		}
+		},
+		externals: [{
+			'jquery': {
+				root: '$',
+				commonjs2: 'jquery',
+				commonjs: 'jquery',
+				amd: 'jquery'
+			}
+		}]
 	})
 	.use('extract')
 
