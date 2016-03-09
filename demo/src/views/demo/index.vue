@@ -805,7 +805,7 @@
 				</div>
 				<div class="card-block">
 					<div class="card">
-						<div class="sidebar sidebar-dark sidebar-left bg-primary sidebar-static" data-visible="xs-up">
+						<div class="sidebar sidebar-dark sidebar-left bg-primary sidebar-static sidebar-visible" data-visible="none">
 							<a href="#" class="sidebar-brand">Sidebar Brand</a>
 							<div class="sidebar-heading">Header</div>
 							<ul class="sidebar-menu">
@@ -856,7 +856,7 @@
 				</div>
 				<div class="card-block">
 					<div class="card">
-						<div class="sidebar sidebar-dark bg-primary sidebar-static" data-visible="xs-up">
+						<div class="sidebar sidebar-dark bg-primary sidebar-static" data-visible="none">
 							<div class="sidebar-heading">Header</div>
 							<ul class="sidebar-menu">
 								<li class="sidebar-menu-item">
@@ -872,7 +872,7 @@
 						</div>
 					</div>
 					<div class="card bg-faded">
-						<div class="sidebar sidebar-light bg-white sidebar-static" data-visible="xs-up">
+						<div class="sidebar sidebar-light bg-white sidebar-static" data-visible="none">
 							<div class="sidebar-heading">Header</div>
 							<ul class="sidebar-menu">
 								<li class="sidebar-menu-item">
