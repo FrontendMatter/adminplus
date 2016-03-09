@@ -38,8 +38,8 @@
     "webpack": "^1.12.11"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.2",
-    "bootstrap-layout": "^1.0.0-alpha.1",
+    "bootstrap": "4.0.0-alpha.2",
+    "bootstrap-layout": "1.0.0-alpha.2",
     "sass-md-colors": "^1.0.0"
   },
   "directories": {
