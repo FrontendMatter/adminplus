@@ -395,7 +395,8 @@ gulp.task('default', ['sass', 'browserify']);
 
 ```bash
 npm install --save \
-    adminplus \
+    adminplus@1.0.0-alpha.9 \
+    bootstrap-layout@1.0.0-alpha.3 \
     bootstrap@4.0.0-alpha.2 \
     jquery@2 \
     tether
@@ -454,6 +455,9 @@ var AdminPlus = require('adminplus');
 
 // Initialize Sidebars
 AdminPlus.Sidebar.init();
+
+// Initialize Scrollbars
+AdminPlus.Scrollable();
 ```
 
 ---
@@ -466,7 +470,7 @@ AdminPlus.Sidebar.init();
 
 ```html
 <!DOCTYPE html>
-<html>
+<html class="bootstrap-layout">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -483,7 +487,7 @@ AdminPlus.Sidebar.init();
   <link type="text/css" href="css/app.min.css" rel="stylesheet">
 
 </head>
-<body class="ls-top-navbar">
+<body class="layout-container ls-top-navbar">
 
   <!-- Navbar -->
   <nav class="navbar navbar-dark bg-primary navbar-full navbar-fixed-top">
@@ -508,26 +512,28 @@ AdminPlus.Sidebar.init();
   <!-- // END Navbar -->
 
   <!-- Content -->
-  <div class="container">
+  <div class="layout-content" data-scrollable>
+    <div class="container">
 
-    <!-- Breadcrumb -->
-    <ol class="breadcrumb">
-      <li><a href="index.html">AdminPlus</a></li>
-      <li class="active">Fixed layout</li>
-    </ol>
-    <!-- // END Breadcrumb -->
+      <!-- Breadcrumb -->
+      <ol class="breadcrumb">
+        <li><a href="index.html">AdminPlus</a></li>
+        <li class="active">Fixed layout</li>
+      </ol>
+      <!-- // END Breadcrumb -->
 
-    <h1>Hello World</h1>
-    
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ea ullam iusto asperiores repellat perspiciatis error. Quo praesentium, expedita neque natus quisquam iure consequuntur unde hic doloribus ab voluptas pariatur!</p>
+      <h1>Hello World</h1>
+      
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ea ullam iusto asperiores repellat perspiciatis error. Quo praesentium, expedita neque natus quisquam iure consequuntur unde hic doloribus ab voluptas pariatur!</p>
 
-    <div class="card">
-      <div class="card-block">
-        This is a demo for the <a target="_blank" href="https://github.com/themekit/adminplus-boilerplate-gulp-advanced">adminplus-boilerplate-gulp-advanced</a> repository. <br>
-        Read the full guide <a target="_blank" href="http://adminplus.themekit.io/gulp-advanced-workflow">Advanced gulp workflow</a>.
+      <div class="card">
+        <div class="card-block">
+          This is a demo for the <a target="_blank" href="https://github.com/themekit/adminplus-boilerplate-gulp-advanced">adminplus-boilerplate-gulp-advanced</a> repository. <br>
+          Read the full guide <a target="_blank" href="http://adminplus.themekit.io/gulp-advanced-workflow">Advanced gulp workflow</a>.
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
   <!-- // END Content -->
 
@@ -543,7 +549,7 @@ AdminPlus.Sidebar.init();
 
 ```html
 <!DOCTYPE html>
-<html>
+<html class="bootstrap-layout">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -560,19 +566,19 @@ AdminPlus.Sidebar.init();
   <link type="text/css" href="css/app.min.css" rel="stylesheet">
 
 </head>
-<body class="ls-top-navbar">
+<body class="layout-container ls-top-navbar si-l3-md-up">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-light bg-white navbar-full navbar-fixed-top left-md-sidebar">
+  <nav class="navbar navbar-light bg-white navbar-full navbar-fixed-top ls-left-sidebar">
 
     <!-- Navbar toggle -->
     <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbar"><span class="material-icons">menu</span></button>
 
     <!-- Sidebar toggle -->
-      <button class="navbar-toggler pull-xs-left hidden-md-up first-child-xs" type="button" data-toggle="sidebar" data-target="#sidebar"><span class="material-icons">menu</span></button>
+    <button class="navbar-toggler pull-xs-left" type="button" data-toggle="sidebar" data-target="#sidebar"><span class="material-icons">menu</span></button>
 
     <!-- Brand -->
-    <span class="navbar-brand first-child-md">Sidebar layout</span>
+    <span class="navbar-brand">Sidebar layout</span>
 
     <!-- Collapse -->
     <div class="collapse navbar-toggleable-xs" id="navbar">
@@ -586,18 +592,18 @@ AdminPlus.Sidebar.init();
   <!-- // END Navbar -->
 
   <!-- Sidebar -->
-  <div class="sidebar sidebar-left sidebar-dark bg-primary show-desktop" id="sidebar">
+  <div class="sidebar sidebar-left sidebar-visible-md-up si-si-3 sidebar-dark bg-primary" id="sidebar">
 
     <!-- Brand -->
     <a href="index.html" class="sidebar-brand">Brand</a>
 
     <!-- Menu -->
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html"><i class="material-icons">home</i><span class="icon-text">Fixed layout</span></a>
+    <ul class="sidebar-menu sm-active-button-bg">
+      <li class="sidebar-menu-item">
+        <a class="sidebar-menu-button" href="index.html"><i class="sidebar-menu-icon material-icons">home</i> Fixed layout</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="sidebar.html"><i class="material-icons">menu</i><span class="icon-text">Sidebar layout</span></a>
+      <li class="sidebar-menu-item active">
+        <a class="sidebar-menu-button" href="sidebar.html"><i class="sidebar-menu-icon material-icons">menu</i> Sidebar layout</a>
       </li>
     </ul>
     <!-- // END Menu -->
@@ -606,7 +612,7 @@ AdminPlus.Sidebar.init();
   <!-- // END Sidebar -->
 
   <!-- Content -->
-  <div class="content-wrapper">
+  <div class="layout-content" data-scrollable>
     <div class="container-fluid">
 
       <!-- Breadcrumb -->
