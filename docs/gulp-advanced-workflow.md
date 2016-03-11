@@ -427,8 +427,8 @@ gulp.task('default', ['sass', 'browserify']);
 
 ```bash
 npm install --save \
-    adminplus@1.0.0-alpha.9 \
-    bootstrap-layout@1.0.0-alpha.3 \
+    adminplus@1.0.0-alpha.10 \
+    bootstrap-layout@1.0.0-alpha.4 \
     bootstrap@4.0.0-alpha.2 \
     jquery@2 \
     tether
@@ -624,7 +624,7 @@ AdminPlus.Scrollable();
   <!-- // END Navbar -->
 
   <!-- Sidebar -->
-  <div class="sidebar sidebar-left sidebar-visible-md-up si-si-3 sidebar-dark bg-primary" id="sidebar">
+  <div class="sidebar sidebar-left sidebar-visible-md-up si-si-3 sidebar-dark bg-primary" id="sidebar" data-scrollable>
 
     <!-- Brand -->
     <a href="index.html" class="sidebar-brand">Brand</a>

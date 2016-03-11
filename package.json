@@ -1,6 +1,6 @@
 {
   "name": "adminplus",
-  "version": "1.0.0-alpha.9",
+  "version": "1.0.0-alpha.10",
   "description": "AdminPlus Lite Bootstrap Theme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.2",
-    "bootstrap-layout": "1.0.0-alpha.3",
+    "bootstrap-layout": "1.0.0-alpha.4",
     "sass-md-colors": "^1.0.0"
   },
   "directories": {
