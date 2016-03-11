@@ -21,6 +21,7 @@
 							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'basic-usage' } }">Basic usage (npm)</a></li>
 							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'gulp-simple-workflow' } }">Simple gulp workflow</a></li>
 							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'gulp-advanced-workflow' } }">Advanced gulp workflow</a></li>
+							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'laravel' } }">Laravel app</a></li>
 							<li><a class="dropdown-item" v-link="{ name: 'docs.page', params: { page: 'local-development' } }">Local development</a></li>
 						</ul>
 					</li>

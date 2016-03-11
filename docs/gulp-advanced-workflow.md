@@ -1,8 +1,11 @@
 # Advanced Gulp workflow using the AdminPlus Lite Bootstrap Theme
 For this example, we are using Gulp as the primary build tool and we get to see how to work with the Sass source files provided with AdminPlus Lite, use a module system, setup file watchers and more.
 
-### Code and demo
-> If you'd rather see the complete code for this guide or start a blank project using this boilerplate, clone the [adminplus-boilerplate-gulp-advanced](https://github.com/themekit/adminplus-boilerplate-gulp-advanced) Github repository. You can also [see a working live demo](http://gulp-advanced.adminplus-boilerplate.themekit.io) of the boilerplate we're builing in this guide.
+### Code
+> If you'd rather see the complete code for this guide or start a blank project using this boilerplate, clone the [adminplus-boilerplate-gulp-advanced](https://github.com/themekit/adminplus-boilerplate-gulp-advanced) Github repository. 
+
+### Demo
+> You can also [see a working live demo](http://gulp-advanced.adminplus-boilerplate.themekit.io) of the boilerplate we're builing in this guide.
 
 ### Features
 - advanced [gulp](https://github.com/gulpjs/gulp) workflow
@@ -19,6 +22,35 @@ For this example, we are using Gulp as the primary build tool and we get to see 
 - example of customizing AdminPlus Lite colors
 
 ---
+
+## Boilerplate usage
+> You need to have gulp installed globally. Run `npm install -g gulp`.
+
+#### Clone the boilerplate repository
+```bash
+git clone \ 
+  https://github.com/themekit/adminplus-boilerplate-gulp-advanced.git \
+  my-project
+```
+
+```bash
+cd my-project
+```
+
+#### Install dependencies
+```bash
+npm install
+```
+
+#### Build
+```bash
+gulp
+```
+
+#### Watch
+```bash
+gulp watch
+```
 
 ## Project structure
 > Our final project structure will look like this:

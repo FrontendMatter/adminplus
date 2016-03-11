@@ -1,13 +1,40 @@
 # Basic usage (npm)
 The most simple npm setup and minimal boilerplate to get started with AdminPlus Lite. For this example, we're not going to use any build tools.
 
-### Code and demo
-> If you'd rather see the complete code for this guide, clone the [adminplus-boilerplate-npm](https://github.com/themekit/adminplus-boilerplate-npm) Github repository. You can also [see a working live demo](http://npm.adminplus-boilerplate.themekit.io) of the files we're creating in this guide.
+### Code
+> If you'd rather see the complete code for this guide, clone the [adminplus-boilerplate-npm](https://github.com/themekit/adminplus-boilerplate-npm) Github repository. 
+
+### Demo
+> You can also [see a working live demo](http://npm.adminplus-boilerplate.themekit.io) of the files we're creating in this guide.
 
 ### Features
 - simple npm setup
 - no build tools
 - static HTML layout examples
+
+---
+
+## Boilerplate usage
+#### Clone the boilerplate repository
+```bash
+git clone \ 
+  https://github.com/themekit/adminplus-boilerplate-npm.git \
+  my-project
+```
+
+```bash
+cd my-project
+```
+
+#### Install dependencies
+```bash
+npm install
+```
+
+#### Copy vendor assets
+```bash
+npm run copy-vendor
+```
 
 ---
 
