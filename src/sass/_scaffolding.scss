@@ -4,12 +4,6 @@ body {
 	position: relative;
 }
 
-.container,
-.container-fluid {
-	padding-left: $grid-gutter-width;
-	padding-right: $grid-gutter-width;
-}
-
 .page-heading {
 	padding: $grid-gutter-width 0;
 }
