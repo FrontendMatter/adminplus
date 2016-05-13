@@ -98,11 +98,8 @@ $text-muted-light:                  lighten($text-muted, 22%) !default;
 $card-nav-link:                     $gray-light !default;
 $card-nav-link-hover:               $gray !default;
 
-//////////////////////
-// BOOTSTRAP-LAYOUT //
-//////////////////////
-
-@import 'bootstrap-layout/src/sass/variables';
+$navbar-padding-vertical:           0 !default;
+$navbar-padding-horizontal:         0 !default;
 
 /////////////////////////////////
 // DEFAULT BOOTSTRAP VARIABLES //
