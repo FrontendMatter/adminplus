@@ -18,6 +18,7 @@
 - [adminplus-boilerplate-gulp-advanced](https://github.com/themekit/adminplus-boilerplate-gulp-advanced) - Advanced gulp setup (compile Sass, import Sass files from npm packages, customize colors, minify CSS, autoprefixer, sourcemaps, browserify module system, file watchers)
 - [adminplus-boilerplate-laravel](https://github.com/themekit/adminplus-boilerplate-laravel) - **Laravel** application setup (gulp, Laravel Elixir, Sass, browserify)
 - [adminplus-boilerplate-rails](https://github.com/themekit/adminplus-boilerplate-rails) - **Rails** application setup (Asset Pipeline)
+- [adminplus-boilerplate-angular2](https://github.com/themekit/adminplus-boilerplate-angular2) - **Angular 2** application setup (TypeScript, SystemJS)
 - [adminplus-boilerplate-vue](https://github.com/themekit/adminplus-boilerplate-vue) - **Vue.js** application setup (Webpack)
 
 ---
